@@ -11,23 +11,7 @@ on:
       - master
 env:
   NAME: Ashwin         
-  PHONENUMBER: 7092310772 
-
-  # workflow_dispatch:
-  #   inputs:
-  #     phoneNumber:
-  #       description: 'Phone number to send message to'
-  #       required: true
-  #       default: '7092310772'
-  #     contactName:
-  #       description: 'Contact name'
-  #       required: true
-  #       default: 'AshwinTest'
-  #     dynamicValue:
-  #       description: 'Dynamic value for testing'
-  #       required: true
-  #       default: 'testDynamicValue'
-
+  PHONENUMBER: '7092310772' 
 jobs:
   test:
     timeout-minutes: 60
