@@ -50,15 +50,15 @@ jobs:
         echo "Phone Number: $PHONENUMBER"
         echo "Contact Name: $NAME"
         npx playwright test
-    - name: Print input github
+    - name: Print input from repository_dispatch (client_payload)
       run: |
-        echo "Phone Number: ${{ github }}"
-        echo "Contact Name: ${{ github.event }}"
+        echo "Phone Number (from repository_dispatch): ${{ github.event.client_payload.PHONENUMBER }}"
+        echo "Contact Name (from repository_dispatch): ${{ github.event.client_payload.NAME }}"
 
-    - name: Run Playwright tests github
+    - name: Run Playwright tests with repository_dispatch inputs
       run: |
-        echo "Phone Number: ${{ github.event.client_payload.PHONENUMBER }}"
-        echo "Contact Name: ${{ github.event.client_payload.NAME }}"
+        echo "Phone Number (from repository_dispatch): ${{ github.event.client_payload.PHONENUMBER }}"
+        echo "Contact Name (from repository_dispatch): ${{ github.event.client_payload.NAME }}"
         npx playwright test
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
