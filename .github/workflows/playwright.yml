@@ -57,8 +57,7 @@ jobs:
         npx playwright test
       env:
         PHONENUMBER: $PHONENUMBER
-        CONTACT_NAME: $Name
-        DYNAMIC_VALUE: ${{ github.event.inputs.dynamicValue }}
+        CONTACT_NAME: $NAME
 
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
