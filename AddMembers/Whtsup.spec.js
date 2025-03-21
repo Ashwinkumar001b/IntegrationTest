@@ -9,10 +9,13 @@ function myTest(){
 
 test("Login to WhatsApp and Save Session", async () => {
    const result = process.env.contactName
+   const result1 = process.env.phoneNumber
 
   const phoneNumber = 7092310772;
   const contactName = "Ashwin";
   log("result", result);
+  log("result1", result1);
+log("process.env",process.env)
   log("contactName", contactName);
   if (!phoneNumber || !contactName) {
     console.log("⚠️ Please provide both phone number and contact name.");
