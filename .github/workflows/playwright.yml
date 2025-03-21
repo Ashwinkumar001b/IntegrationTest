@@ -6,11 +6,11 @@ on:
       NAME:
         description: 'Name of the person'
         required: true
-        default: ''
+        default: 'test1'
       PHONENUMBER:
         description: 'Number of the person'
         required: true
-        default: ''
+        default: '1234'
   repository_dispatch:
     types: [trigger-addmembers-workflow]
   push:
