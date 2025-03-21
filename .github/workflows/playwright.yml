@@ -36,8 +36,8 @@ jobs:
 
     - name: Run Playwright tests
       run: |
-        echo "Running Playwright tests with Phone Number: $PHONENUMBER"
-        echo "Running Playwright tests with Contact Name: $NAME"
+        echo "Phone Number: $PHONENUMBER"
+        echo "Contact Name: $NAME
         npx playwright test
       env:
         PHONENUMBER: $PHONENUMBER
