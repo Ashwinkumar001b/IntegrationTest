@@ -17,7 +17,7 @@ on:
       contactName:
         description: 'Contact name'
         required: true
-        default: 'Ashwin'
+        default: 'AshwinTest'
 jobs:
   test:
     timeout-minutes: 60
