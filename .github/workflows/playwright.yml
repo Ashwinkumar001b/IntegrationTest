@@ -6,7 +6,11 @@ on:
       NAME:
         description: 'Name of the person'
         required: true
-        default: 'Mona the Octocat'
+        default: ''
+      PHONENUMBER:
+        description: 'Number of the person'
+        required: true
+        default: ''
   repository_dispatch:
     types: [trigger-addmembers-workflow]
   push:
