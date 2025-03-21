@@ -52,8 +52,8 @@ jobs:
         npx playwright test
     - name: Print input github
       run: |
-        echo "Phone Number: ${{ github.event.client_payload.PHONENUMBER }}"
-        echo "Contact Name: ${{ github.event.client_payload.NAME }}"
+        echo "Phone Number: ${{ github }}"
+        echo "Contact Name: ${{ github.event }}"
 
     - name: Run Playwright tests github
       run: |
