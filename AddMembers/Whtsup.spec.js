@@ -17,7 +17,7 @@ test("Login to WhatsApp and Save Session", async () => {
     return;
   }
   const browser = await chromium.launchPersistentContext(userDataDir, {
-    headless: false, // Open browser visibly
+    headless: true, // Open browser visibly
   });
 
   const page = await browser.newPage();
