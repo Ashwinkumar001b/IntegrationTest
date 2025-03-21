@@ -8,13 +8,12 @@ const userDataDir = "whatsapp-session-new"; // Directory to save session
 function myTest(){
 
 test("Login to WhatsApp and Save Session", async () => {
-   const result = process.env.contactName
-   const result1 = process.env.phoneNumber
+   const Name = process.env.NAME
+   const PhnNumber = process.env.PHONENUMBER
   const phoneNumber = 7092310772;
   const contactName = "Ashwin";
-  log("result", result);
-  log("result1", result1);
-log("process.env",process.env)
+  log("Name", Name);
+  log("PhnNumber", PhnNumber);
   log("contactName", contactName);
   if (!phoneNumber || !contactName) {
     console.log("⚠️ Please provide both phone number and contact name.");
