@@ -33,7 +33,10 @@ jobs:
       run: npx playwright install --with-deps
     - name: Run Playwright tests
       run: npx playwright test
-      
+      env:
+        PHONE_NUMBER: ${{ github.event.inputs.phoneNumber }}
+        CONTACT_NAME: ${{ github.event.inputs.contactName }}
+        DYNAMIC_VALUE: ${{ github.event.inputs.dynamicValue }}
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:

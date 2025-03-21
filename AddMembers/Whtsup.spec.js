@@ -2,12 +2,14 @@ import { test, chromium } from "@playwright/test";
 import { log } from "console";
 import { ftruncate } from "fs";
 
+
 const userDataDir = "whatsapp-session-new"; // Directory to save session
 
 function myTest(){
 
 test("Login to WhatsApp and Save Session", async () => {
-   const result = process
+   const result = process.env.contactName
+
   const phoneNumber = 7092310772;
   const contactName = "Ashwin";
   log("result", result);
