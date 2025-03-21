@@ -10,7 +10,7 @@ on:
       - main
       - master
 env:
- Name:Ashwin
+  NAME: Ashwin 
 
   # workflow_dispatch:
   #   inputs:
@@ -46,7 +46,7 @@ jobs:
 
     - name: Print input
       run: |
-        echo "Phone Number: ${{ github.event.inputs.phoneNumber }}"
+        echo "Phone Number: ${{ env.NAME }}"
         echo "Contact Name: $Name"
         echo "Dynamic Value: ${{ github.event.inputs.dynamicValue }}"
 
@@ -57,7 +57,7 @@ jobs:
         echo "Running Playwright tests with Dynamic Value: $DYNAMIC_VALUE"
         npx playwright test
       env:
-        PHONE_NUMBER: ${{ github.event.inputs.phoneNumber }}
+        PHONE_NUMBER: ${{ env.NAME }}
         CONTACT_NAME: $Name
         DYNAMIC_VALUE: ${{ github.event.inputs.dynamicValue }}
 
@@ -107,7 +107,7 @@ jobs:
 #     - name: Run Playwright tests
 #       run: npx playwright test
 #       env:
-#         PHONE_NUMBER: ${{ github.event.inputs.phoneNumber }}
+#         PHONE_NUMBER: ${{ env.NAME }}
 #         CONTACT_NAME: ${{ github.event.inputs.contactName }}
 #         DYNAMIC_VALUE: ${{ github.event.inputs.dynamicValue }}
 #     - uses: actions/upload-artifact@v4
