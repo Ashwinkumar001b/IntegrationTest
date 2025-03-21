@@ -37,11 +37,8 @@ jobs:
     - name: Run Playwright tests
       run: |
         echo "Phone Number: $PHONENUMBER"
-        echo "Contact Name: $NAME
+        echo "Contact Name: $NAME"
         npx playwright test
-      env:
-        PHONENUMBER: $PHONENUMBER
-        CONTACT_NAME: $NAME
 
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
