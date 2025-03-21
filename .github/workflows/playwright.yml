@@ -54,7 +54,9 @@ jobs:
       run: |
         echo "Phone Number (from repository_dispatch): ${{ github.event.client_payload.PHONENUMBER }}"
         echo "Contact Name (from repository_dispatch): ${{ github.event.client_payload.NAME }}"
-
+      env:
+        NAME: ${{ github.event.client_payload.PHONENUMBER }}         
+        PHONENUMBER: ${{ github.event.client_payload.NAME }} 
     - name: Run Playwright tests with repository_dispatch inputs
       run: |
         echo "Phone Number (from repository_dispatch): ${{ github.event.client_payload.PHONENUMBER }}"
