@@ -9,20 +9,23 @@ on:
     branches:
       - main
       - master
-  workflow_dispatch:
-    inputs:
-      phoneNumber:
-        description: 'Phone number to send message to'
-        required: true
-        default: '7092310772'
-      contactName:
-        description: 'Contact name'
-        required: true
-        default: 'AshwinTest'
-      dynamicValue:
-        description: 'Dynamic value for testing'
-        required: true
-        default: 'testDynamicValue'
+env:
+ Name:Ashwin
+
+  # workflow_dispatch:
+  #   inputs:
+  #     phoneNumber:
+  #       description: 'Phone number to send message to'
+  #       required: true
+  #       default: '7092310772'
+  #     contactName:
+  #       description: 'Contact name'
+  #       required: true
+  #       default: 'AshwinTest'
+  #     dynamicValue:
+  #       description: 'Dynamic value for testing'
+  #       required: true
+  #       default: 'testDynamicValue'
 
 jobs:
   test:
@@ -44,7 +47,7 @@ jobs:
     - name: Print input
       run: |
         echo "Phone Number: ${{ github.event.inputs.phoneNumber }}"
-        echo "Contact Name: ${{ github.event.inputs.contactName }}"
+        echo "Contact Name: $Name"
         echo "Dynamic Value: ${{ github.event.inputs.dynamicValue }}"
 
     - name: Run Playwright tests
@@ -55,7 +58,7 @@ jobs:
         npx playwright test
       env:
         PHONE_NUMBER: ${{ github.event.inputs.phoneNumber }}
-        CONTACT_NAME: ${{ github.event.inputs.contactName }}
+        CONTACT_NAME: $Name
         DYNAMIC_VALUE: ${{ github.event.inputs.dynamicValue }}
 
     - uses: actions/upload-artifact@v4
