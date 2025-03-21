@@ -1,0 +1,22 @@
+[
+  {
+    "name": "wa_ul",
+    "value": "1cf05424-eec3-4091-8ed6-69b3a2ee1fab",
+    "domain": ".web.whatsapp.com",
+    "path": "/",
+    "expires": 1749976030.483411,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "wa_web_lang_pref",
+    "value": "en_GB",
+    "domain": ".web.whatsapp.com",
+    "path": "/",
+    "expires": 1744619285,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  }
+]

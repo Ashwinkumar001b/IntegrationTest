@@ -1,0 +1,6 @@
+2025/03/21-12:04:20.457 4944 Reusing MANIFEST C:\SPFX\WhatsupIntegration\whatsapp-session-new\Default\Local Storage\leveldb/MANIFEST-000001
+2025/03/21-12:04:20.470 4944 Recovering log #4
+2025/03/21-12:04:20.479 4944 Reusing old log C:\SPFX\WhatsupIntegration\whatsapp-session-new\Default\Local Storage\leveldb/000004.log 
+2025/03/21-12:05:21.253 934 Level-0 table #7: started
+2025/03/21-12:05:21.258 934 Level-0 table #7: 15230 bytes OK
+2025/03/21-12:05:21.262 934 Delete type=0 #4
