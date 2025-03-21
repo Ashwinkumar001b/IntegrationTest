@@ -10,7 +10,6 @@ function myTest(){
 test("Login to WhatsApp and Save Session", async () => {
    const result = process.env.contactName
    const result1 = process.env.phoneNumber
-
   const phoneNumber = 7092310772;
   const contactName = "Ashwin";
   log("result", result);

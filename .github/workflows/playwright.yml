@@ -1,4 +1,5 @@
 name: Playwright Tests
+
 on:
   push:
     branches: 
@@ -18,28 +19,97 @@ on:
         description: 'Contact name'
         required: true
         default: 'AshwinTest'
+      dynamicValue:
+        description: 'Dynamic value for testing'
+        required: true
+        default: 'testDynamicValue'
+
 jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+
     - uses: actions/setup-node@v4
       with:
         node-version: lts/*
+
     - name: Install dependencies
       run: npm ci
+
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
+
+    - name: Debugging: Print inputs
+      run: |
+        echo "Phone Number: ${{ github.event.inputs.phoneNumber }}"
+        echo "Contact Name: ${{ github.event.inputs.contactName }}"
+        echo "Dynamic Value: ${{ github.event.inputs.dynamicValue }}"
+
     - name: Run Playwright tests
-      run: npx playwright test
+      run: |
+        echo "Running Playwright tests with Phone Number: $PHONE_NUMBER"
+        echo "Running Playwright tests with Contact Name: $CONTACT_NAME"
+        echo "Running Playwright tests with Dynamic Value: $DYNAMIC_VALUE"
+        npx playwright test
       env:
         PHONE_NUMBER: ${{ github.event.inputs.phoneNumber }}
         CONTACT_NAME: ${{ github.event.inputs.contactName }}
         DYNAMIC_VALUE: ${{ github.event.inputs.dynamicValue }}
+
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
+
+
+
+
+# name: Playwright Tests
+# on:
+#   push:
+#     branches: 
+#       - main
+#       - master
+#   pull_request:
+#     branches:
+#       - main
+#       - master
+#   workflow_dispatch:
+#     inputs:
+#       phoneNumber:
+#         description: 'Phone number to send message to'
+#         required: true
+#         default: '7092310772'
+#       contactName:
+#         description: 'Contact name'
+#         required: true
+#         default: 'AshwinTest'
+# jobs:
+#   test:
+#     timeout-minutes: 60
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@v4
+#     - uses: actions/setup-node@v4
+#       with:
+#         node-version: lts/*
+#     - name: Install dependencies
+#       run: npm ci
+#     - name: Install Playwright Browsers
+#       run: npx playwright install --with-deps
+#     - name: Run Playwright tests
+#       run: npx playwright test
+#       env:
+#         PHONE_NUMBER: ${{ github.event.inputs.phoneNumber }}
+#         CONTACT_NAME: ${{ github.event.inputs.contactName }}
+#         DYNAMIC_VALUE: ${{ github.event.inputs.dynamicValue }}
+#     - uses: actions/upload-artifact@v4
+#       if: ${{ !cancelled() }}
+#       with:
+#         name: playwright-report
+#         path: playwright-report/
+#         retention-days: 30
