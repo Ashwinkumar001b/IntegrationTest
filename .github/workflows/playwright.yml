@@ -1,13 +1,14 @@
 name: Playwright Tests
 
 on:
+  workflow_dispatch:
+    inputs:
+      NAME:
+        description: 'Name of the person'
+        required: true
+        default: 'Mona the Octocat'
   repository_dispatch:
     types: [trigger-addmembers-workflow]
-  inputs:
-    NAME:
-      description: 'Name of the person'
-      required: true
-      default: 'Mona the Octocat'
   push:
     branches: 
       - main
@@ -16,6 +17,7 @@ on:
     branches:
       - main
       - master
+
 env:
   NAME: AshwinTest         
   PHONENUMBER: '7092310772' 
