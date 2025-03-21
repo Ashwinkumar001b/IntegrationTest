@@ -10,7 +10,7 @@ on:
       - main
       - master
 env:
-  NAME: Ashwin         
+  NAME: AshwinTest         
   PHONENUMBER: '7092310772' 
 jobs:
   test:
