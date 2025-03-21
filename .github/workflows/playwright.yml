@@ -41,7 +41,7 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
 
-    - name: Debugging: Print inputs
+    - name: Print input
       run: |
         echo "Phone Number: ${{ github.event.inputs.phoneNumber }}"
         echo "Contact Name: ${{ github.event.inputs.contactName }}"
