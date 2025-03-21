@@ -47,17 +47,18 @@ jobs:
 
     - name: Print input
       run: |
-        echo "Phone Number: ${{ env.NAME }}"
-        echo "Contact Name:  ${{ env.PHONENUMBER }}"
+        echo "Phone Number: $PHONENUMBER"
+        echo "Contact Name: $NAME"
 
     - name: Run Playwright tests
       run: |
-        echo "Running Playwright tests with Phone Number: $env.NAME"
-        echo "Running Playwright tests with Contact Name: $env.PHONENUMBER"
+        echo "Running Playwright tests with Phone Number: $PHONENUMBER"
+        echo "Running Playwright tests with Contact Name: $NAME"
         npx playwright test
       env:
-        PHONE_NUMBER: ${{ env.NAME }}
-        CONTACT_NAME: ${{ env.PHONENUMBER }}
+        PHONENUMBER: $PHONENUMBER
+        CONTACT_NAME: $Name
+        DYNAMIC_VALUE: ${{ github.event.inputs.dynamicValue }}
 
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
