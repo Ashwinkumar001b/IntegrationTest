@@ -23,7 +23,7 @@ on:
       - master
 env:
   NAME: ${{ github.event.inputs.NAME }}         
-  PHONENUMBER: ${{ github.event.inputs.PHONENUMBER } 
+  PHONENUMBER: ${{ github.event.inputs.PHONENUMBER }}
 jobs:
   test:
     timeout-minutes: 60
