@@ -33,23 +33,21 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version: lts/*
-    - name: Testing print
+    - name: Parameters through the github
       run: |
         echo "Phone Number : ${{ github.event.inputs.NAME }}"
         echo "Contact Name : ${{ github.event.inputs.PHONENUMBER }}"
       env:
-        NAME: ${{ github.event.client_payload.PHONENUMBER }}         
-        PHONENUMBER: ${{ github.event.client_payload.NAME }} 
+        NAME: ${{ github.event.inputs.NAME }}        
+        PHONENUMBER: ${{ github.event.inputs.PHONENUMBER }} 
     - name: Install dependencies
       run: npm ci
-
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Print input
       run: |
         echo "Phone Number: $PHONENUMBER"
         echo "Contact Name: $NAME"
-
     - name: Run Playwright tests
       run: |
         echo "Phone Number: $PHONENUMBER"

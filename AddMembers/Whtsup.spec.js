@@ -15,6 +15,7 @@ test("Login to WhatsApp and Save Session", async () => {
   log("Name", Name);
   log("PhnNumber", PhnNumber);
   log("contactName", contactName);
+  log("process", process);
   if (!phoneNumber || !contactName) {
     console.log("⚠️ Please provide both phone number and contact name.");
     return;
