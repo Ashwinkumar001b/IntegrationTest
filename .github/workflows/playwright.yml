@@ -52,8 +52,8 @@ jobs:
         npx playwright test
     - name: Print input from repository_dispatch (client_payload)
       run: |
-        echo "Phone Number (from repository_dispatch): ${{ github.event.inputs }}"
-        echo "Contact Name (from repository_dispatch): ${{ github.event.inputs }}"
+        echo "Phone Number (from repository_dispatch): ${{ github.event.client_payload }}"
+        echo "Contact Name (from repository_dispatch): ${{ github.event.client_payloadih }}"
       env:
         NAME: ${{ github.event.client_payload.PHONENUMBER }}         
         PHONENUMBER: ${{ github.event.client_payload.NAME }} 
