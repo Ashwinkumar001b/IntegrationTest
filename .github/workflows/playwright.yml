@@ -21,9 +21,9 @@ on:
     branches:
       - main
       - master
-# env:
-#   NAME: AshwinTest         
-#   PHONENUMBER: '7092310772' 
+env:
+  NAME: ${{ github.event.inputs.NAME }}         
+  PHONENUMBER: ${{ github.event.inputs.PHONENUMBER } 
 jobs:
   test:
     timeout-minutes: 60
