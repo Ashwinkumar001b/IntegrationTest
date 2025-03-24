@@ -30,11 +30,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-
     - uses: actions/setup-node@v4
       with:
         node-version: lts/*
-
+    - name: Testing print
+      run: |
+        echo "Phone Number : ${{ github.event.inputs.NAME }}"
+        echo "Contact Name : ${{ github.event.inputs.PHONENUMBER }}"
+      env:
+        NAME: ${{ github.event.client_payload.PHONENUMBER }}         
+        PHONENUMBER: ${{ github.event.client_payload.NAME }} 
     - name: Install dependencies
       run: npm ci
 
@@ -50,18 +55,6 @@ jobs:
         echo "Phone Number: $PHONENUMBER"
         echo "Contact Name: $NAME"
         npx playwright test
-    - name: Print input from repository_dispatch (client_payload)
-      run: |
-        echo "Phone Number (from repository_dispatch): ${{ github.event.client_payload }}"
-        echo "Contact Name (from repository_dispatch): ${{ github.event.client_payloadih }}"
-      env:
-        NAME: ${{ github.event.client_payload.PHONENUMBER }}         
-        PHONENUMBER: ${{ github.event.client_payload.NAME }} 
-    - name: Run Playwright tests with repository_dispatch inputs
-      run: |
-        echo "Phone Number (from repository_dispatch): ${{ github.event.inputs.PHONENUMBER }}"
-        echo "Contact Name (from repository_dispatch): ${{ github.event.inputs.NAME }}"
-        npx playwright test
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
@@ -72,3 +65,15 @@ jobs:
 
 
 
+   # - name: Print input from repository_dispatch (client_payload)
+    #   run: |
+    #     echo "Phone Number (from repository_dispatch): ${{ github.event.client_payload }}"
+    #     echo "Contact Name (from repository_dispatch): ${{ github.event.client_payloadih }}"
+    #   env:
+    #     NAME: ${{ github.event.client_payload.PHONENUMBER }}         
+    #     PHONENUMBER: ${{ github.event.client_payload.NAME }} 
+    # - name: Run Playwright tests with repository_dispatch inputs
+    #   run: |
+    #     echo "Phone Number (from repository_dispatch): ${{ github.event.inputs.PHONENUMBER }}"
+    #     echo "Contact Name (from repository_dispatch): ${{ github.event.inputs.NAME }}"
+    #     npx playwright test
