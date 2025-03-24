@@ -21,9 +21,9 @@ on:
     branches:
       - main
       - master
-env:
-  NAME: AshwinTest         
-  PHONENUMBER: '7092310772' 
+# env:
+#   NAME: AshwinTest         
+#   PHONENUMBER: '7092310772' 
 jobs:
   test:
     timeout-minutes: 60
