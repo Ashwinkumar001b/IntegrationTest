@@ -10,7 +10,7 @@ test("Login to WhatsApp and Save Session", async () => {
    const GroupName = process.env.GROUPNAME
    const PhnNumber = process.env.PHONENUMBER
   // const GroupName = "Testing A";
-  // const PhnNumber ="7639002971";
+  // const PhnNumber =["7639002971","7092310772","9940338789"];
   log("PhnNumber", PhnNumber);
   log("GroupName", GroupName);
   const browser = await chromium.launchPersistentContext(userDataDir, {
@@ -38,11 +38,14 @@ test("Login to WhatsApp and Save Session", async () => {
       .getByRole("textbox", { name: "Search name or number" })
       .getByRole("paragraph")
       .click();
+      for (let number of PhnNumber) {
     await page
       .getByRole("textbox", { name: "Search name or number" })
-      .fill(PhnNumber);
+      .fill(number);
       await page.waitForTimeout(3000);
     await page.keyboard.press('Enter')
+
+      }
     // await page.getByRole("button", { name: Name }).click();
     await page.getByRole("button", { name: "Confirm" }).click();
     await page
