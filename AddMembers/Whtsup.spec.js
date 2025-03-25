@@ -7,15 +7,14 @@ const userDataDir = "whatsapp-session-new"; // Directory to save session
 
 function myTest(){
 test("Login to WhatsApp and Save Session", async () => {
-   const GroupName = process.env.GROUPNAME
-   const PhnNumber = process.env.PHONENUMBER
-  // const GroupName = "Testing A";
-  // const PhnNumber ="7639002971,7092310772";
-  const phoneArray = PhnNumber.split(',');
+  //  const GroupName = process.env.GROUPNAME
+  //  const PhnNumber = process.env.PHONENUMBER
+  const GroupName = "Testing D";
+  const PhnNumber ="7639002971,8940766936";
+  const phoneNumberArray = PhnNumber.split(',');
   log("GroupName", GroupName);
-  log("PhnNumber", PhnNumber);
+  log("PhnNumber", phoneNumberArray);
 
-  log("phoneArray", phoneArray);
   const browser = await chromium.launchPersistentContext(userDataDir, {
     headless: true, // Open browser visibly
   });
@@ -41,20 +40,21 @@ test("Login to WhatsApp and Save Session", async () => {
       .getByRole("textbox", { name: "Search name or number" })
       .getByRole("paragraph")
       .click();
-      for (let number of PhnNumber) {
+      for (let number of phoneNumberArray) {
     await page
       .getByRole("textbox", { name: "Search name or number" })
       .fill(number);
+      log("number",number)
       await page.waitForTimeout(3000);
     await page.keyboard.press('Enter')
 
       }
     // await page.getByRole("button", { name: Name }).click();
     await page.getByRole("button", { name: "Confirm" }).click();
-    // await page
-    //   .getByRole("dialog")
-    //   .getByRole("button", { name: "Add member" })
-    //   .click();
+    await page
+      .getByRole("dialog")
+      .getByRole("button", { name: "Add member" })
+      .click();
   } catch (error) {
     console.log("⚠️ Login check failed. Please verify manually.");
   }
