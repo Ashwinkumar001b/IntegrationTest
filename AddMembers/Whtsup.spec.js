@@ -13,6 +13,8 @@ test("Login to WhatsApp and Save Session", async () => {
   // const PhnNumber ="7639002971,7092310772";
   const phoneArray = PhnNumber.split(',');
   log("GroupName", GroupName);
+  log("PhnNumber", PhnNumber);
+
   log("phoneArray", phoneArray);
   const browser = await chromium.launchPersistentContext(userDataDir, {
     headless: true, // Open browser visibly
