@@ -10,7 +10,7 @@ on:
       PHONENUMBER:
         description: 'Number of the person'
         required: true
-        default: '1234'
+        default: '["1234", "5678", "9876"]'
   repository_dispatch:
     types: [trigger-addmembers-workflow]
   push:

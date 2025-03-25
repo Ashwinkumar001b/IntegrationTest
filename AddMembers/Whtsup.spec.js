@@ -8,10 +8,10 @@ const userDataDir = "whatsapp-session-new"; // Directory to save session
 function myTest(){
 test("Login to WhatsApp and Save Session", async () => {
    const GroupName = process.env.GROUPNAME
-   const PhnNumber = process.env.PHONENUMBER
+   const PhnNumber = JSON.parse(process.env.PHONENUMBER)
   // const GroupName = "Testing A";
   // const PhnNumber =["7639002971","7092310772","9940338789"];
-  log("PhnNumber", PhnNumber);
+  log("rocess.env.PHONENUMBER", Process.env.PHONENUMBER);
   log("GroupName", GroupName);
   const browser = await chromium.launchPersistentContext(userDataDir, {
     headless: true, // Open browser visibly
