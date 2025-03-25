@@ -1,3 +1,2 @@
-2025/03/25-12:49:57.540 6994 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Session Storage/MANIFEST-000001
-2025/03/25-12:49:57.545 6994 Recovering log #3
-2025/03/25-12:49:57.563 6994 Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Session Storage/000003.log 
+2025/03/25-13:24:20.106 4520 Creating DB C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Session Storage since it was missing.
+2025/03/25-13:24:20.147 4520 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Session Storage/MANIFEST-000001
