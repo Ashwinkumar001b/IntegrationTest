@@ -1,3 +1,2 @@
-2025/03/25-16:59:21.741 b3c4 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Site Characteristics Database/MANIFEST-000001
-2025/03/25-16:59:21.742 b3c4 Recovering log #3
-2025/03/25-16:59:21.744 b3c4 Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Site Characteristics Database/000003.log 
+2025/03/25-17:20:53.225 91b4 Creating DB C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Site Characteristics Database since it was missing.
+2025/03/25-17:20:53.236 91b4 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Site Characteristics Database/MANIFEST-000001

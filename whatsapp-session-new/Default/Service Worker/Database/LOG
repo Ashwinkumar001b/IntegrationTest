@@ -1,3 +1,2 @@
-2025/03/25-17:13:27.304 4f6c Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Service Worker\Database/MANIFEST-000001
-2025/03/25-17:13:27.323 4f6c Recovering log #3
-2025/03/25-17:13:27.324 4f6c Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Service Worker\Database/000003.log 
+2025/03/25-17:21:04.395 1108 Creating DB C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Service Worker\Database since it was missing.
+2025/03/25-17:21:04.404 1108 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Service Worker\Database/MANIFEST-000001
