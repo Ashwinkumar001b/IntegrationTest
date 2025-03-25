@@ -3,7 +3,7 @@ name: Playwright Tests
 on:
   workflow_dispatch:
     inputs:
-      NAME:
+      GROUPNAME:
         description: 'Name of the person'
         required: true
         default: 'test1'
@@ -22,7 +22,7 @@ on:
       - main
       - master
 env:
-  NAME: ${{ github.event.inputs.NAME }}         
+  GROUPNAME: ${{ github.event.inputs.NAME }}         
   PHONENUMBER: ${{ github.event.inputs.PHONENUMBER }}
 jobs:
   test:
@@ -36,9 +36,9 @@ jobs:
     - name: Parameters through the github
       run: |
         echo "Phone Number : ${{ github.event.inputs.NAME }}"
-        echo "Contact Name : ${{ github.event.inputs.PHONENUMBER }}"
+        echo "Group Name : ${{ github.event.inputs.PHONENUMBER }}"
       env:
-        NAME: ${{ github.event.inputs.NAME }}        
+        GROUPNAME: ${{ github.event.inputs.NAME }}        
         PHONENUMBER: ${{ github.event.inputs.PHONENUMBER }} 
     - name: Install dependencies
       run: npm ci
@@ -47,11 +47,9 @@ jobs:
     - name: Print input
       run: |
         echo "Phone Number: $PHONENUMBER"
-        echo "Contact Name: $NAME"
     - name: Run Playwright tests
       run: |
         echo "Phone Number: $PHONENUMBER"
-        echo "Contact Name: $NAME"
         npx playwright test
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}

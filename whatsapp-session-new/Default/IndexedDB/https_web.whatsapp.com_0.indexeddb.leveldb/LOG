@@ -1,13 +1,13 @@
-2025/03/25-11:22:05.601 76dc Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/03/25-11:22:05.603 76dc Recovering log #127
-2025/03/25-11:22:05.633 76dc Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000127.log 
-2025/03/25-11:22:06.403 76dc Level-0 table #132: started
-2025/03/25-11:22:06.423 76dc Level-0 table #132: 349289 bytes OK
-2025/03/25-11:22:06.425 76dc Delete type=0 #127
-2025/03/25-11:22:06.426 76dc Manual compaction at level-0 from '\x005\x00\x00\x00' @ 72057594037927935 : 1 .. '\x006\x00\x00\x00' @ 0 : 0; will stop at (end)
-2025/03/25-11:22:08.295 8034 Compacting 1@1 + 1@2 files
-2025/03/25-11:22:08.397 8034 Generated table #133@1: 42280 keys, 1665534 bytes
-2025/03/25-11:22:08.397 8034 Compacted 1@1 + 1@2 files => 1665534 bytes
-2025/03/25-11:22:08.399 8034 compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/03/25-11:22:08.399 8034 Delete type=2 #129
-2025/03/25-11:22:08.400 8034 Delete type=2 #132
+2025/03/25-11:49:10.270 b3c4 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/03/25-11:49:10.273 b3c4 Recovering log #139
+2025/03/25-11:49:10.285 b3c4 Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000139.log 
+2025/03/25-11:49:10.652 4558 Level-0 table #144: started
+2025/03/25-11:49:10.659 4558 Level-0 table #144: 149051 bytes OK
+2025/03/25-11:49:10.660 4558 Delete type=0 #139
+2025/03/25-11:49:10.661 9404 Manual compaction at level-0 from '\x008\x00\x00\x00' @ 72057594037927935 : 1 .. '\x009\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/03/25-11:49:11.612 b3c4 Compacting 1@1 + 1@2 files
+2025/03/25-11:49:11.677 b3c4 Generated table #145@1: 45025 keys, 1790937 bytes
+2025/03/25-11:49:11.677 b3c4 Compacted 1@1 + 1@2 files => 1790937 bytes
+2025/03/25-11:49:11.678 b3c4 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/03/25-11:49:11.679 b3c4 Delete type=2 #141
+2025/03/25-11:49:11.679 b3c4 Delete type=2 #144
