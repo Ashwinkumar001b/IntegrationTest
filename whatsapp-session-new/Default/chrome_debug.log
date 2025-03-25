@@ -1,7 +1,7 @@
-[0325/133239.737:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/ye/r/pStX1dueYIf.js (157)
-[0325/133247.158:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/ye/r/pStX1dueYIf.js (157)
-[0325/133249.945:INFO:CONSOLE(70)] "ErrorUtils caught an error:
+[0325/155356.803:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/ye/r/pStX1dueYIf.js (157)
+[0325/155358.081:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/ye/r/pStX1dueYIf.js (157)
+[0325/155401.107:INFO:CONSOLE(70)] "ErrorUtils caught an error:
 
-Converting to a string will drop content data. Hash="undefined" Translation="You removed {names}" Content="{"key":null,"ref":null,"props":{"contact":{"id":"919500840410@c.us","name":"+91 95008 40410","shortName":"","pushname":".","type":"in","isContactSyncCompleted":1,"textStatusLastUpdateTime":-1,"syncToAddressbook":true},"showNotifyName":true,"elevatedP" (type=object,Object)
+Converting to a string will drop content data. Hash="undefined" Translation="You added {names}" Content="{"key":null,"ref":null,"props":{"contact":{"id":"917639002971@c.us","name":"Logesh Technorucs","shortName":"Logesh","type":"in","isContactSyncCompleted":1,"textStatusLastUpdateTime":-1,"syncToAddressbook":true},"showNotifyName":true,"elevatedPushName" (type=object,Object)
 
 Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/y6/r/unfwRslK8eX.js (70)

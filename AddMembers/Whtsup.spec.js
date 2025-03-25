@@ -9,8 +9,8 @@ function myTest(){
 test("Login to WhatsApp and Save Session", async () => {
    const GroupName = process.env.GROUPNAME
    const PhnNumber = process.env.PHONENUMBER
-  // const GroupName = "Test A";
-  // const PhnNumber ="7092310772";
+  // const GroupName = "Test B";
+  // const PhnNumber ="7639002971";
   log("PhnNumber", PhnNumber);
   const browser = await chromium.launchPersistentContext(userDataDir, {
     headless: true, // Open browser visibly
