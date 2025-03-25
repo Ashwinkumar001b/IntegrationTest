@@ -6,12 +6,11 @@ import { ftruncate } from "fs";
 const userDataDir = "whatsapp-session-new"; // Directory to save session
 
 function myTest(){
-
 test("Login to WhatsApp and Save Session", async () => {
-   const GroupName = process.env.GroupName
-  //  const PhnNumber = process.env.PHONENUMBER
+   const GroupName = process.env.GROUPNAME
+   const PhnNumber = process.env.PHONENUMBER
   // const Name = "Aravindh";
-  const PhnNumber ="9600392639";
+  // const PhnNumber ="9600392639";
   log("PhnNumber", PhnNumber);
   const browser = await chromium.launchPersistentContext(userDataDir, {
     headless: true, // Open browser visibly
@@ -21,7 +20,6 @@ test("Login to WhatsApp and Save Session", async () => {
   await page.goto("https://web.whatsapp.com/");
 
   console.log(" Scan the QR code to log in...");
-  
  // Wait until the WhatsApp chat list loads
   try {
     await page.waitForSelector("div[aria-label='Chat list']",{
@@ -30,10 +28,10 @@ test("Login to WhatsApp and Save Session", async () => {
     console.log("✅ Login successful! Session saved.");
     await page
       .getByRole("textbox", { name: "Search input textbox" })
-      .fill("Test A");
-    await page.getByTitle("Test A", { exact: true }).click();
+      .fill(GroupName);
+    await page.getByTitle(GroupName, { exact: true }).click();
 
-    await page.getByRole("button", { name: "Test A" }).click();
+    await page.getByRole("button", { name: GroupName }).click();
     await page.getByRole("button", { name: "Add member", exact: true }).click();
     await page
       .getByRole("textbox", { name: "Search name or number" })
