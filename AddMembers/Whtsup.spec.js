@@ -8,13 +8,13 @@ const userDataDir = "whatsapp-session-new"; // Directory to save session
 function myTest(){
 
 test("Login to WhatsApp and Save Session", async () => {
-   const Name = process.env.NAME
-   const PhnNumber = process.env.PHONENUMBER
-  // const phoneNumber = 7092310772;
-  // const contactName = "Ashwin";
+  //  const Name = process.env.NAME
+  //  const PhnNumber = process.env.PHONENUMBER
+  const Name = "Ashwin";
+  const PhnNumber ="7092310772";
   log("Name", Name);
   log("PhnNumber", PhnNumber);
-  if (!phoneNumber || !contactName) {
+  if (!Name || !PhnNumber) {
     console.log("⚠️ Please provide both phone number and contact name.");
     return;
   }
@@ -46,8 +46,8 @@ test("Login to WhatsApp and Save Session", async () => {
       .click();
     await page
       .getByRole("textbox", { name: "Search name or number" })
-      .fill(phoneNumber);
-    await page.getByRole("button", { name: contactName }).click();
+      .fill(PhnNumber);
+    await page.getByRole("button", { name: Name }).click();
     await page.getByRole("button", { name: "Confirm" }).click();
     await page
       .getByRole("dialog")
@@ -63,4 +63,4 @@ test("Login to WhatsApp and Save Session", async () => {
 });
 }
 
-myTest()
+myTest()   
