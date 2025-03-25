@@ -9,7 +9,7 @@ function myTest(){
 test("Login to WhatsApp and Save Session", async () => {
    const GroupName = process.env.GROUPNAME
    const PhnNumber = process.env.PHONENUMBER
-  // const GroupName = "Test B";
+  // const GroupName = "Test C";
   // const PhnNumber ="7639002971";
   log("PhnNumber", PhnNumber);
   const browser = await chromium.launchPersistentContext(userDataDir, {
@@ -57,4 +57,4 @@ test("Login to WhatsApp and Save Session", async () => {
 });
 }
 
-myTest()   
+myTest()

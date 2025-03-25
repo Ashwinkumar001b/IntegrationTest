@@ -1,3 +1,2 @@
-2025/03/25-15:53:56.305 5ee8 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db/MANIFEST-000001
-2025/03/25-15:53:56.306 5ee8 Recovering log #3
-2025/03/25-15:53:56.307 5ee8 Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db/000003.log 
+2025/03/25-16:40:46.354 7404 Creating DB C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db since it was missing.
+2025/03/25-16:40:46.362 7404 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db/MANIFEST-000001

@@ -1,8 +1,2 @@
-2025/03/25-15:53:56.284 a21c Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Local Storage\leveldb/MANIFEST-000001
-2025/03/25-15:53:56.293 a21c Recovering log #11
-2025/03/25-15:53:56.294 a21c Level-0 table #15: started
-2025/03/25-15:53:56.298 a21c Level-0 table #15: 16880 bytes OK
-2025/03/25-15:53:56.298 a21c Recovering log #15
-2025/03/25-15:53:56.298 a21c Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Local Storage\leveldb/000015.log 
-2025/03/25-15:53:56.300 a21c Delete type=0 #11
-2025/03/25-15:53:56.300 a21c Delete type=2 #16
+2025/03/25-16:40:46.527 193c Creating DB C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Local Storage\leveldb since it was missing.
+2025/03/25-16:40:46.585 193c Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Local Storage\leveldb/MANIFEST-000001
