@@ -1,2 +1,3 @@
-2025/03/25-13:24:19.756 b900 Creating DB C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Sync Data\LevelDB since it was missing.
-2025/03/25-13:24:19.766 b900 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Sync Data\LevelDB/MANIFEST-000001
+2025/03/25-13:29:24.315 a8cc Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Sync Data\LevelDB/MANIFEST-000001
+2025/03/25-13:29:24.316 a8cc Recovering log #3
+2025/03/25-13:29:24.317 a8cc Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Sync Data\LevelDB/000003.log 
