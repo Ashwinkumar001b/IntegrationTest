@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       GROUPNAME:
-        description: 'Name of the person'
+        description: 'Name of the group'
         required: true
         default: 'test1'
       PHONENUMBER:
@@ -47,10 +47,10 @@ jobs:
     - name: Print input
       run: |
         echo "Phone Number: $PHONENUMBER"
-    - name: Run Playwright tests
+    - name: Run Playwright tests 
       run: |
         echo "Phone Number: $PHONENUMBER"
-        npx playwright test
+        npx playwright test .\AddMembers --project=chromiu
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:

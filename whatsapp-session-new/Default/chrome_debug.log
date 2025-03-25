@@ -1,7 +1,69 @@
-[0325/110134.293:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yd/r/uvGLqTcUnbs.js (157)
-[0325/110141.691:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/ye/r/pStX1dueYIf.js (157)
-[0325/110145.463:INFO:CONSOLE(70)] "ErrorUtils caught an error:
+[0325/125151.244:ERROR:cache_util_win.cc(20)] Unable to move the cache: Access is denied. (0x5)
+[0325/125151.243:ERROR:cache_util_win.cc(20)] Unable to move the cache: Access is denied. (0x5)
+[0325/125151.244:ERROR:disk_cache.cc(216)] Unable to create cache
+[0325/125151.244:ERROR:gpu_disk_cache.cc(711)] Gpu Cache Creation failed: -2
+[0325/125151.244:ERROR:cache_util_win.cc(20)] Unable to move the cache: Access is denied. (0x5)
+[0325/125151.247:ERROR:disk_cache.cc(216)] Unable to create cache
+[0325/125151.247:ERROR:gpu_disk_cache.cc(711)] Gpu Cache Creation failed: -2
+[0325/125151.247:ERROR:disk_cache.cc(216)] Unable to create cache
+[0325/125151.247:ERROR:gpu_disk_cache.cc(711)] Gpu Cache Creation failed: -2
+[0325/125151.517:ERROR:cache_util_win.cc(20)] Unable to move the cache: Access is denied. (0x5)
+[0325/125151.517:ERROR:disk_cache.cc(216)] Unable to create cache
+[0325/125151.517:ERROR:gpu_disk_cache.cc(711)] Gpu Cache Creation failed: -2
+[0325/125151.517:ERROR:cache_util_win.cc(20)] Unable to move the cache: Access is denied. (0x5)
+[0325/125151.517:ERROR:cache_util_win.cc(20)] Unable to move the cache: Access is denied. (0x5)
+[0325/125151.517:ERROR:disk_cache.cc(216)] Unable to create cache
+[0325/125151.517:ERROR:gpu_disk_cache.cc(711)] Gpu Cache Creation failed: -2
+[0325/125151.525:ERROR:disk_cache.cc(216)] Unable to create cache
+[0325/125151.525:ERROR:gpu_disk_cache.cc(711)] Gpu Cache Creation failed: -2
+[0325/125151.826:ERROR:cache_util_win.cc(20)] Unable to move the cache: Access is denied. (0x5)
+[0325/125151.826:ERROR:cache_util_win.cc(20)] Unable to move the cache: Access is denied. (0x5)
+[0325/125151.826:ERROR:cache_util_win.cc(20)] Unable to move the cache: Access is denied. (0x5)
+[0325/125151.826:ERROR:disk_cache.cc(216)] Unable to create cache
+[0325/125151.826:ERROR:gpu_disk_cache.cc(711)] Gpu Cache Creation failed: -2
+[0325/125151.826:ERROR:disk_cache.cc(216)] Unable to create cache
+[0325/125151.826:ERROR:gpu_disk_cache.cc(711)] Gpu Cache Creation failed: -2
+[0325/125151.826:ERROR:disk_cache.cc(216)] Unable to create cache
+[0325/125151.826:ERROR:gpu_disk_cache.cc(711)] Gpu Cache Creation failed: -2
+[0325/125152.021:ERROR:cache_util_win.cc(20)] Unable to move the cache: Access is denied. (0x5)
+[0325/125152.021:ERROR:cache_util_win.cc(20)] Unable to move the cache: Access is denied. (0x5)
+[0325/125152.021:ERROR:disk_cache.cc(216)] Unable to create cache
+[0325/125152.021:ERROR:cache_util_win.cc(20)] Unable to move the cache: Access is denied. (0x5)
+[0325/125152.021:ERROR:gpu_disk_cache.cc(711)] Gpu Cache Creation failed: -2
+[0325/125152.022:ERROR:disk_cache.cc(216)] Unable to create cache
+[0325/125152.022:ERROR:gpu_disk_cache.cc(711)] Gpu Cache Creation failed: -2
+[0325/125152.022:ERROR:disk_cache.cc(216)] Unable to create cache
+[0325/125152.022:ERROR:gpu_disk_cache.cc(711)] Gpu Cache Creation failed: -2
+[0325/125152.149:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/ye/r/pStX1dueYIf.js (157)
+[0325/125153.258:WARNING:leveldb_database.cc(137)] Unable to open C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db\metadata: IO error: C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db\metadata/LOCK: Access denied. (ChromeMethodBFE: 15::LockFile::5)
+[0325/125153.843:WARNING:leveldb_database.cc(137)] Unable to open C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db\metadata: IO error: C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db\metadata/LOCK: Access denied. (ChromeMethodBFE: 15::LockFile::5)
+[0325/125154.260:ERROR:service_worker_storage.cc(1688)] Failed to delete the database: Database IO error
+[0325/125154.818:ERROR:service_worker_storage.cc(1688)] Failed to delete the database: Database IO error
+[0325/125155.262:WARNING:leveldb_database.cc(137)] Unable to open C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db\metadata: IO error: C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db\metadata/LOCK: Access denied. (ChromeMethodBFE: 15::LockFile::5)
+[0325/125155.850:WARNING:leveldb_database.cc(137)] Unable to open C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db\metadata: IO error: C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db\metadata/LOCK: Access denied. (ChromeMethodBFE: 15::LockFile::5)
+[0325/125157.296:WARNING:leveldb_database.cc(137)] Unable to open C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db\metadata: IO error: C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db\metadata/LOCK: Access denied. (ChromeMethodBFE: 15::LockFile::5)
+[0325/125157.866:WARNING:leveldb_database.cc(137)] Unable to open C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db\metadata: IO error: C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db\metadata/LOCK: Access denied. (ChromeMethodBFE: 15::LockFile::5)
+[0325/125159.328:WARNING:leveldb_database.cc(137)] Unable to open C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db\metadata: IO error: C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db\metadata/LOCK: Access denied. (ChromeMethodBFE: 15::LockFile::5)
+[0325/125159.699:ERROR:backing_store.cc(195)] Failed to open LevelDB database from C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb,IO error: C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/LOCK: Access denied. (ChromeMethodBFE: 15::LockFile::5)
+[0325/125159.902:WARNING:leveldb_database.cc(137)] Unable to open C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db\metadata: IO error: C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db\metadata/LOCK: Access denied. (ChromeMethodBFE: 15::LockFile::5)
+[0325/125200.329:ERROR:backing_store.cc(195)] Failed to open LevelDB database from C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb,IO error: C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/LOCK: Access denied. (ChromeMethodBFE: 15::LockFile::5)
+[0325/125201.733:ERROR:backing_store.cc(195)] Failed to open LevelDB database from C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb,IO error: C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/LOCK: Access denied. (ChromeMethodBFE: 15::LockFile::5)
+[0325/125202.364:ERROR:backing_store.cc(195)] Failed to open LevelDB database from C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb,IO error: C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/LOCK: Access denied. (ChromeMethodBFE: 15::LockFile::5)
+[0325/125202.724:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/ye/r/pStX1dueYIf.js (157)
+[0325/125203.769:ERROR:backing_store.cc(195)] Failed to open LevelDB database from C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb,IO error: C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/LOCK: Access denied. (ChromeMethodBFE: 15::LockFile::5)
+[0325/125204.399:ERROR:backing_store.cc(195)] Failed to open LevelDB database from C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb,IO error: C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/LOCK: Access denied. (ChromeMethodBFE: 15::LockFile::5)
+[0325/125205.799:ERROR:backing_store.cc(195)] Failed to open LevelDB database from C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb,IO error: C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/LOCK: Access denied. (ChromeMethodBFE: 15::LockFile::5)
+[0325/125206.268:INFO:CONSOLE(70)] "ErrorUtils caught an error:
 
-Converting to a string will drop content data. Hash="undefined" Translation="{user_name} left" Content="{"key":null,"ref":null,"props":{"contact":{"id":"917092310772@c.us","name":"Ashwin Technorucs","shortName":"Ashwin","type":"in","isContactSyncCompleted":1,"textStatusLastUpdateTime":-1,"syncToAddressbook":true},"showNotifyName":true,"elevatedPushName" (type=object,Object)
+Converting to a string will drop content data. Hash="undefined" Translation="You added {names}" Content="{"key":null,"ref":null,"props":{"contact":{"id":"917092310772@c.us","name":"Ashwin Technorucs","shortName":"Ashwin","pushname":"Ashwin","type":"in","isContactSyncCompleted":1,"textStatusLastUpdateTime":-1,"syncToAddressbook":true},"showNotifyName":tr" (type=object,Object)
 
 Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/y6/r/unfwRslK8eX.js (70)
+[0325/125206.420:ERROR:backing_store.cc(195)] Failed to open LevelDB database from C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb,IO error: C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/LOCK: Access denied. (ChromeMethodBFE: 15::LockFile::5)
+[0325/125207.814:ERROR:backing_store.cc(195)] Failed to open LevelDB database from C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb,IO error: C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/LOCK: Access denied. (ChromeMethodBFE: 15::LockFile::5)
+[0325/125208.445:ERROR:backing_store.cc(195)] Failed to open LevelDB database from C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb,IO error: C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/LOCK: Access denied. (ChromeMethodBFE: 15::LockFile::5)
+[0325/125210.458:ERROR:backing_store.cc(195)] Failed to open LevelDB database from C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb,IO error: C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/LOCK: Access denied. (ChromeMethodBFE: 15::LockFile::5)
+[0325/125212.471:ERROR:backing_store.cc(195)] Failed to open LevelDB database from C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb,IO error: C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/LOCK: Access denied. (ChromeMethodBFE: 15::LockFile::5)
+[0325/125214.519:ERROR:backing_store.cc(195)] Failed to open LevelDB database from C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb,IO error: C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/LOCK: Access denied. (ChromeMethodBFE: 15::LockFile::5)
+[0325/125216.542:ERROR:backing_store.cc(195)] Failed to open LevelDB database from C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb,IO error: C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/LOCK: Access denied. (ChromeMethodBFE: 15::LockFile::5)
+[0325/125218.561:ERROR:backing_store.cc(195)] Failed to open LevelDB database from C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb,IO error: C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/LOCK: Access denied. (ChromeMethodBFE: 15::LockFile::5)
+[0325/125220.579:ERROR:backing_store.cc(195)] Failed to open LevelDB database from C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb,IO error: C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/LOCK: Access denied. (ChromeMethodBFE: 15::LockFile::5)
