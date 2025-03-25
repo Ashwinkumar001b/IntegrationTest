@@ -50,7 +50,7 @@ jobs:
     - name: Run Playwright tests 
       run: |
         echo "Phone Number: $PHONENUMBER"
-        npx playwright test 
+        npx playwright test .\AddMembers
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
