@@ -7,10 +7,10 @@ const userDataDir = "whatsapp-session-new"; // Directory to save session
 
 function myTest(){
 test("Login to WhatsApp and Save Session", async () => {
-   const GroupName = process.env.GROUPNAME
-   const PhnNumber = process.env.PHONENUMBER
-  // const GroupName = "Test C";
-  // const PhnNumber ="7639002971";
+  //  const GroupName = process.env.GROUPNAME
+  //  const PhnNumber = process.env.PHONENUMBER
+  const GroupName = "Testing A";
+  const PhnNumber ="7639002971";
   log("PhnNumber", PhnNumber);
   const browser = await chromium.launchPersistentContext(userDataDir, {
     headless: true, // Open browser visibly
@@ -40,6 +40,7 @@ test("Login to WhatsApp and Save Session", async () => {
     await page
       .getByRole("textbox", { name: "Search name or number" })
       .fill(PhnNumber);
+      await page.waitForTimeout(3000);
     await page.keyboard.press('Enter')
     // await page.getByRole("button", { name: Name }).click();
     await page.getByRole("button", { name: "Confirm" }).click();

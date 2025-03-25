@@ -1,2 +1,3 @@
-2025/03/25-16:40:46.527 193c Creating DB C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Local Storage\leveldb since it was missing.
-2025/03/25-16:40:46.585 193c Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Local Storage\leveldb/MANIFEST-000001
+2025/03/25-17:01:00.676 7c38 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Local Storage\leveldb/MANIFEST-000001
+2025/03/25-17:01:00.694 7c38 Recovering log #4
+2025/03/25-17:01:00.695 7c38 Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Local Storage\leveldb/000004.log 
