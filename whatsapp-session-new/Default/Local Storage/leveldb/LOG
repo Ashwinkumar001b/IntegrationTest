@@ -1,5 +1,17 @@
-2025/03/26-15:21:23.121 1254 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Local Storage\leveldb/MANIFEST-000001
-2025/03/26-15:21:23.165 1254 Recovering log #20
-2025/03/26-15:21:23.168 1254 Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Local Storage\leveldb/000020.log 
-2025/03/26-15:21:43.534 1254 Level-0 table #24: started
-2025/03/26-15:21:43.547 1254 Level-0 table #24: 16723 bytes OK
+2025/03/26-15:36:03.830 957c Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Local Storage\leveldb/MANIFEST-000001
+2025/03/26-15:36:03.845 957c Recovering log #20
+2025/03/26-15:36:03.845 957c Level-0 table #23: started
+2025/03/26-15:36:03.850 957c Level-0 table #23: 16723 bytes OK
+2025/03/26-15:36:03.851 957c Recovering log #23
+2025/03/26-15:36:03.851 957c Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Local Storage\leveldb/000023.log 
+2025/03/26-15:36:03.854 957c Delete type=0 #20
+2025/03/26-15:36:03.854 957c Delete type=2 #24
+2025/03/26-15:36:03.855 729c Compacting 4@0 + 1@1 files
+2025/03/26-15:36:03.860 729c Generated table #24@0: 106 keys, 10464 bytes
+2025/03/26-15:36:03.860 729c Compacted 4@0 + 1@1 files => 10464 bytes
+2025/03/26-15:36:03.862 729c compacted to: files[ 0 1 0 0 0 0 0 ]
+2025/03/26-15:36:03.863 729c Delete type=2 #13
+2025/03/26-15:36:03.863 729c Delete type=2 #15
+2025/03/26-15:36:03.863 729c Delete type=2 #18
+2025/03/26-15:36:03.863 729c Delete type=2 #21
+2025/03/26-15:36:03.863 729c Delete type=2 #23
