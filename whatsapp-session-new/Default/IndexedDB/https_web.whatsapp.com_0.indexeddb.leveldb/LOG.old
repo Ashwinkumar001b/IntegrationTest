@@ -1,4 +1,119 @@
-2025/03/26-16:17:06.199 35ac Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/03/26-16:17:06.202 35ac Recovering log #1707
-2025/03/26-16:17:06.219 35ac Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/001707.log 
-2025/03/26-16:17:07.897 3d98 Manual compaction at level-0 from '\x00N\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00O\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/03/26-17:27:58.109 95d8 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/03/26-17:27:58.111 95d8 Recovering log #1978
+2025/03/26-17:27:58.162 95d8 Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/001978.log 
+2025/03/26-17:28:00.169 195c Level-0 table #1994: started
+2025/03/26-17:28:00.187 195c Level-0 table #1994: 526426 bytes OK
+2025/03/26-17:28:00.189 195c Delete type=0 #1978
+2025/03/26-17:28:00.190 95d8 Manual compaction at level-0 from '\x00S\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00T\x00\x00\x00' @ 0 : 0; will stop at '\x00S\x00\x00\x05' @ 4500239 : 1
+2025/03/26-17:28:00.190 95d8 Compacting 1@0 + 0@1 files
+2025/03/26-17:28:00.215 95d8 Generated table #1995@0: 31125 keys, 359849 bytes
+2025/03/26-17:28:00.217 95d8 Generated table #1996@0: 50 keys, 2988 bytes
+2025/03/26-17:28:00.218 95d8 Compacted 1@0 + 0@1 files => 362837 bytes
+2025/03/26-17:28:00.218 95d8 compacted to: files[ 0 2 27 0 0 0 0 ]
+2025/03/26-17:28:00.219 95d8 Delete type=2 #1994
+2025/03/26-17:28:00.220 95d8 Manual compaction at level-0 from '\x00S\x00\x00\x05' @ 4500239 : 1 .. '\x00T\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/03/26-17:28:01.606 195c Compacting 1@1 + 4@2 files
+2025/03/26-17:28:01.725 195c Generated table #1997@1: 77634 keys, 2277239 bytes
+2025/03/26-17:28:01.807 195c Generated table #1998@1: 47445 keys, 2210828 bytes
+2025/03/26-17:28:01.873 195c Generated table #1999@1: 38724 keys, 1631705 bytes
+2025/03/26-17:28:01.874 195c Compacted 1@1 + 4@2 files => 6119772 bytes
+2025/03/26-17:28:01.875 195c compacted to: files[ 0 1 26 0 0 0 0 ]
+2025/03/26-17:28:01.875 195c Delete type=2 #1980
+2025/03/26-17:28:01.876 195c Delete type=2 #1981
+2025/03/26-17:28:01.876 195c Delete type=2 #1982
+2025/03/26-17:28:01.876 195c Delete type=2 #1983
+2025/03/26-17:28:01.876 195c Delete type=2 #1995
+2025/03/26-17:28:07.941 c480 Level-0 table #2001: started
+2025/03/26-17:28:07.966 c480 Level-0 table #2001: 1208442 bytes OK
+2025/03/26-17:28:07.967 c480 Delete type=0 #1993
+2025/03/26-17:28:07.969 c480 Compacting 1@0 + 1@1 files
+2025/03/26-17:28:08.000 c480 Generated table #2002@0: 25973 keys, 1118548 bytes
+2025/03/26-17:28:08.002 c480 Generated table #2003@0: 125 keys, 10447 bytes
+2025/03/26-17:28:08.002 c480 Compacted 1@0 + 1@1 files => 1128995 bytes
+2025/03/26-17:28:08.003 c480 compacted to: files[ 0 2 26 0 0 0 0 ]
+2025/03/26-17:28:08.003 c480 Delete type=2 #1996
+2025/03/26-17:28:08.003 c480 Delete type=2 #2001
+2025/03/26-17:28:08.005 c480 Compacting 1@1 + 3@2 files
+2025/03/26-17:28:08.072 c480 Generated table #2004@1: 76291 keys, 2223918 bytes
+2025/03/26-17:28:08.134 c480 Generated table #2005@1: 44573 keys, 2252538 bytes
+2025/03/26-17:28:08.215 c480 Generated table #2006@1: 55911 keys, 2205798 bytes
+2025/03/26-17:28:08.215 c480 Compacted 1@1 + 3@2 files => 6682254 bytes
+2025/03/26-17:28:08.216 c480 compacted to: files[ 0 1 26 0 0 0 0 ]
+2025/03/26-17:28:08.319 c480 Level-0 table #2008: started
+2025/03/26-17:28:08.343 c480 Level-0 table #2008: 1206162 bytes OK
+2025/03/26-17:28:08.344 c480 Delete type=2 #1997
+2025/03/26-17:28:08.344 c480 Delete type=2 #1998
+2025/03/26-17:28:08.344 c480 Delete type=2 #1999
+2025/03/26-17:28:08.344 c480 Delete type=0 #2000
+2025/03/26-17:28:08.344 c480 Delete type=2 #2002
+2025/03/26-17:28:08.347 c480 Compacting 1@1 + 3@2 files
+2025/03/26-17:28:08.413 c480 Generated table #2009@1: 62647 keys, 2207337 bytes
+2025/03/26-17:28:08.480 c480 Generated table #2010@1: 53744 keys, 2260176 bytes
+2025/03/26-17:28:08.568 c480 Generated table #2011@1: 63749 keys, 2233672 bytes
+2025/03/26-17:28:08.589 c480 Generated table #2012@1: 10575 keys, 590982 bytes
+2025/03/26-17:28:08.589 c480 Compacted 1@1 + 3@2 files => 7292167 bytes
+2025/03/26-17:28:08.590 c480 compacted to: files[ 0 1 27 0 0 0 0 ]
+2025/03/26-17:28:08.711 c480 Level-0 table #2014: started
+2025/03/26-17:28:08.734 c480 Level-0 table #2014: 1220175 bytes OK
+2025/03/26-17:28:08.735 c480 Delete type=2 #2004
+2025/03/26-17:28:08.736 c480 Delete type=2 #2005
+2025/03/26-17:28:08.736 c480 Delete type=2 #2006
+2025/03/26-17:28:08.736 c480 Delete type=0 #2007
+2025/03/26-17:28:08.736 c480 Delete type=2 #2008
+2025/03/26-17:28:08.738 c480 Compacting 1@1 + 4@2 files
+2025/03/26-17:28:08.801 c480 Generated table #2015@1: 49992 keys, 2192837 bytes
+2025/03/26-17:28:08.870 c480 Generated table #2016@1: 73728 keys, 2278108 bytes
+2025/03/26-17:28:08.949 c480 Generated table #2017@1: 55085 keys, 2217996 bytes
+2025/03/26-17:28:08.990 c480 Generated table #2018@1: 26088 keys, 1215711 bytes
+2025/03/26-17:28:08.991 c480 Compacted 1@1 + 4@2 files => 7904652 bytes
+2025/03/26-17:28:08.991 c480 compacted to: files[ 0 1 27 0 0 0 0 ]
+2025/03/26-17:28:08.992 c480 Delete type=2 #2009
+2025/03/26-17:28:08.992 c480 Delete type=2 #2010
+2025/03/26-17:28:08.992 c480 Delete type=2 #2011
+2025/03/26-17:28:08.992 c480 Delete type=2 #2012
+2025/03/26-17:28:08.992 c480 Delete type=2 #2014
+2025/03/26-17:28:09.090 c480 Level-0 table #2020: started
+2025/03/26-17:28:09.114 c480 Level-0 table #2020: 947807 bytes OK
+2025/03/26-17:28:09.116 c480 Delete type=0 #2013
+2025/03/26-17:28:09.118 c480 Compacting 1@1 + 4@2 files
+2025/03/26-17:28:09.182 c480 Generated table #2021@1: 52286 keys, 2197793 bytes
+2025/03/26-17:28:09.323 c480 Generated table #2022@1: 78460 keys, 2279906 bytes
+2025/03/26-17:28:09.392 c480 Generated table #2023@1: 46337 keys, 2208157 bytes
+2025/03/26-17:28:09.458 c480 Generated table #2024@1: 41143 keys, 1717988 bytes
+2025/03/26-17:28:09.458 c480 Compacted 1@1 + 4@2 files => 8403844 bytes
+2025/03/26-17:28:09.459 c480 compacted to: files[ 0 1 27 0 0 0 0 ]
+2025/03/26-17:28:09.505 c480 Level-0 table #2026: started
+2025/03/26-17:28:09.527 c480 Level-0 table #2026: 910609 bytes OK
+2025/03/26-17:28:09.529 c480 Delete type=2 #2015
+2025/03/26-17:28:09.530 c480 Delete type=2 #2016
+2025/03/26-17:28:09.530 c480 Delete type=2 #2017
+2025/03/26-17:28:09.530 c480 Delete type=2 #2018
+2025/03/26-17:28:09.530 c480 Delete type=0 #2019
+2025/03/26-17:28:09.530 c480 Delete type=2 #2020
+2025/03/26-17:28:09.534 195c Compacting 1@1 + 4@2 files
+2025/03/26-17:28:09.600 195c Generated table #2027@1: 54681 keys, 2202487 bytes
+2025/03/26-17:28:09.676 195c Generated table #2028@1: 76279 keys, 2223007 bytes
+2025/03/26-17:28:09.742 195c Generated table #2029@1: 44668 keys, 2253931 bytes
+2025/03/26-17:28:09.824 195c Generated table #2030@1: 55818 keys, 2203985 bytes
+2025/03/26-17:28:09.824 195c Compacted 1@1 + 4@2 files => 8883410 bytes
+2025/03/26-17:28:09.825 195c compacted to: files[ 0 1 27 0 0 0 0 ]
+2025/03/26-17:28:09.971 95d8 Level-0 table #2032: started
+2025/03/26-17:28:10.002 95d8 Level-0 table #2032: 1336950 bytes OK
+2025/03/26-17:28:10.004 95d8 Delete type=2 #2021
+2025/03/26-17:28:10.004 95d8 Delete type=2 #2022
+2025/03/26-17:28:10.005 95d8 Delete type=2 #2023
+2025/03/26-17:28:10.005 95d8 Delete type=2 #2024
+2025/03/26-17:28:10.005 95d8 Delete type=0 #2025
+2025/03/26-17:28:10.005 95d8 Delete type=2 #2026
+2025/03/26-17:28:10.529 c480 Compacting 1@1 + 4@2 files
+2025/03/26-17:28:10.581 c480 Generated table #2033@1: 64368 keys, 2210410 bytes
+2025/03/26-17:28:10.626 c480 Generated table #2034@1: 51530 keys, 2256920 bytes
+2025/03/26-17:28:10.707 c480 Generated table #2035@1: 64063 keys, 2233120 bytes
+2025/03/26-17:28:10.721 c480 Generated table #2036@1: 8880 keys, 505178 bytes
+2025/03/26-17:28:10.721 c480 Compacted 1@1 + 4@2 files => 7205628 bytes
+2025/03/26-17:28:10.721 c480 compacted to: files[ 0 1 27 0 0 0 0 ]
+2025/03/26-17:28:10.722 c480 Delete type=2 #2027
+2025/03/26-17:28:10.722 c480 Delete type=2 #2028
+2025/03/26-17:28:10.722 c480 Delete type=2 #2029
+2025/03/26-17:28:10.722 c480 Delete type=2 #2030
+2025/03/26-17:28:10.722 c480 Delete type=2 #2032

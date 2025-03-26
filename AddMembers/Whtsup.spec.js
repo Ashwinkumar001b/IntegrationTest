@@ -6,13 +6,13 @@ const userDataDir = "whatsapp-session-new"; // Directory to save session
 
 function myTest() {
   test("Login to WhatsApp and Save Session", async () => {
-     const GroupName = process.env.GROUPNAME
-     const PhnNumber = process.env.PHONENUMBER
-    const integrationType=process.env.TYPE;
-    // // const integrationType = "ADD";
+    //  const GroupName = process.env.GROUPNAME
+    //  const PhnNumber = process.env.PHONENUMBER
+    // const integrationType=process.env.TYPE;
+    const integrationType = "ADD";
     // const integrationType = "REMOVE";
-    // const GroupName = "Testing A";
-    // const PhnNumber = "7639002971";
+    const GroupName = "Testing A";
+    const PhnNumber = "7639002971,8940766936,9940338789";
     const phoneNumberArray = PhnNumber.split(",");
 
     log("GroupName", GroupName);
@@ -41,7 +41,6 @@ function myTest() {
       await page.getByRole("button", { name: GroupName }).click();
 
       if (integrationType === "ADD") {
-
         await page
           .getByRole("button", { name: "Add member", exact: true })
           .click();
@@ -54,36 +53,38 @@ function myTest() {
             .getByRole("textbox", { name: "Search name or number" })
             .fill(number);
           log("number", number);
-          await page.waitForTimeout(3000);
-          await page.keyboard.press("Enter");
+          const alreadyInTheGroup = await page.locator(
+            "text=Already added to group"
+          );
+          if (await alreadyInTheGroup.isHidden()) {
+            await page.waitForTimeout(3000);
+            await page.keyboard.press("Enter");
+          }
         }
         await page.getByRole("button", { name: "Confirm" }).click();
         await page
           .getByRole("dialog")
           .getByRole("button", { name: "Add member" })
           .click();
-        log("Added successfully")
-
+        log("Added successfully");
       } else if (integrationType === "REMOVE") {
-
         await page.locator('[role="button"]:has-text("member")').nth(1).click();
-
-
         for (let number of phoneNumberArray) {
+          await page.getByRole("textbox", { name: "Search contacts" }).fill("");
           await page
-          .getByRole("textbox", { name: "Search contacts" })
-          .fill("");
-        await page
-          .getByRole("textbox", { name: "Search contacts" })
-          .fill(number);
+            .getByRole("textbox", { name: "Search contacts" })
+            .fill(number);
+
           await page.waitForTimeout(3000);
 
-          await page.getByRole('textbox', { name: 'Search contacts' }).press('ArrowDown');
+          await page
+            .getByRole("textbox", { name: "Search contacts" })
+            .press("ArrowDown");
 
-          await page.keyboard.press("Enter")
-        await page.getByRole("button", { name: "Remove" }).click();
+          await page.keyboard.press("Enter");
+          await page.getByRole("button", { name: "Remove" }).click();
         }
-        log("Removed successfully")
+        log("Removed successfully");
       }
     } catch (error) {
       console.log("⚠️ Login check failed. Please verify manually.");
