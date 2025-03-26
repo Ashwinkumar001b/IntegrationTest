@@ -11,8 +11,8 @@ function myTest() {
     const integrationType=process.env.TYPE;
     // const integrationType = "ADD";
     // // const integrationType = "REMOVE";
-    // const GroupName = "Testing A";
-    // const PhnNumber = "7639002971,8940766936,9940338789";
+    // const GroupName = "Testing B";
+    // const PhnNumber = "7639002971,9600392639,8940766936";
     const phoneNumberArray = PhnNumber.split(",");
 
     log("GroupName", GroupName);
