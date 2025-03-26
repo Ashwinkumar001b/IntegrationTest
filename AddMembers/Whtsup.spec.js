@@ -6,13 +6,13 @@ const userDataDir = "whatsapp-session-new"; // Directory to save session
 
 function myTest() {
   test("Login to WhatsApp and Save Session", async () => {
-     const GroupName = process.env.GROUPNAME
-     const PhnNumber = process.env.PHONENUMBER
-    const integrationType=process.env.TYPE;
+    //  const GroupName = process.env.GROUPNAME
+    //  const PhnNumber = process.env.PHONENUMBER
+    // const integrationType=process.env.TYPE;
     // const integrationType = "ADD";
-    // // const integrationType = "REMOVE";
-    // const GroupName = "Testing B";
-    // const PhnNumber = "7639002971,9600392639,8940766936";
+    const integrationType = "REMOVE";
+    const GroupName = "Testing B";
+    const PhnNumber = "7639002971,9600392639,8940766936";
     const phoneNumberArray = PhnNumber.split(",");
 
     log("GroupName", GroupName);
@@ -60,7 +60,7 @@ function myTest() {
             "text=Already added to group"
           );
           if (await alreadyInTheGroup.isHidden()) {
-            await page.waitForTimeout(3000);
+            await page.waitForTimeout(2000);
             await page.keyboard.press("Enter");
           }
         }
@@ -77,8 +77,14 @@ function myTest() {
           await page
             .getByRole("textbox", { name: "Search contacts" })
             .fill(number);
+          await page.waitForTimeout(2000);
 
-          await page.waitForTimeout(3000);
+            const noContact = await page.locator(
+              "text=No contacts found"
+            );
+            if (await noContact.isHidden()) {
+             
+            
 
           await page
             .getByRole("textbox", { name: "Search contacts" })
@@ -86,6 +92,7 @@ function myTest() {
 
           await page.keyboard.press("Enter");
           await page.getByRole("button", { name: "Remove" }).click();
+            }
         }
         log("Removed successfully");
       }
