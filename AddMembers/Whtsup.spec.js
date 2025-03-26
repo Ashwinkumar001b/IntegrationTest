@@ -9,9 +9,9 @@ function myTest() {
      const GroupName = process.env.GROUPNAME
      const PhnNumber = process.env.PHONENUMBER
     const integrationType=process.env.TYPE;
-    // const integrationType = "ADD";
-    // // const integrationType = "REMOVE";
-    // const GroupName = "Testing C";
+    // // const integrationType = "ADD";
+    // const integrationType = "REMOVE";
+    // const GroupName = "Testing A";
     // const PhnNumber = "7639002971";
     const phoneNumberArray = PhnNumber.split(",");
 
@@ -41,7 +41,6 @@ function myTest() {
       await page.getByRole("button", { name: GroupName }).click();
 
       if (integrationType === "ADD") {
-        log("Add")
 
         await page
           .getByRole("button", { name: "Add member", exact: true })
@@ -63,8 +62,9 @@ function myTest() {
           .getByRole("dialog")
           .getByRole("button", { name: "Add member" })
           .click();
+        log("Added successfully")
+
       } else if (integrationType === "REMOVE") {
-             log("Remove")
         await page.locator('[role="button"]:has-text("member")').nth(1).click();
 
 
@@ -80,6 +80,7 @@ function myTest() {
           await page.keyboard.press("Enter")
         await page.getByRole("button", { name: "Remove" }).click();
         }
+        log("Removed successfully")
       }
     } catch (error) {
       console.log("⚠️ Login check failed. Please verify manually.");
