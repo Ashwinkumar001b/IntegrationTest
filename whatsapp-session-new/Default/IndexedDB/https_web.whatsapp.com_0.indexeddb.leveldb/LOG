@@ -1,56 +1,59 @@
-2025/03/25-18:41:20.424 2488 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/03/25-18:41:20.424 2488 Recovering log #867
-2025/03/25-18:41:20.524 2488 Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000867.log 
-2025/03/25-18:41:21.871 2488 Level-0 table #890: started
-2025/03/25-18:41:21.899 2488 Level-0 table #890: 843530 bytes OK
-2025/03/25-18:41:21.901 2488 Delete type=0 #867
-2025/03/25-18:41:21.902 2488 Manual compaction at level-0 from '\x00$\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00%\x00\x00\x00' @ 0 : 0; will stop at '\x00$\x00\x00\x05' @ 2895517 : 1
-2025/03/25-18:41:21.902 2488 Compacting 1@0 + 0@1 files
-2025/03/25-18:41:21.920 2488 Generated table #891@0: 17168 keys, 199519 bytes
-2025/03/25-18:41:21.934 2488 Generated table #892@0: 10400 keys, 272726 bytes
-2025/03/25-18:41:21.934 2488 Compacted 1@0 + 0@1 files => 472245 bytes
-2025/03/25-18:41:21.935 2488 compacted to: files[ 0 2 21 0 0 0 0 ]
-2025/03/25-18:41:21.936 2488 Delete type=2 #890
-2025/03/25-18:41:21.936 2488 Manual compaction at level-0 from '\x00$\x00\x00\x05' @ 2895517 : 1 .. '\x00%\x00\x00\x00' @ 0 : 0; will stop at (end)
-2025/03/25-18:41:22.813 53f4 Compacting 1@1 + 10@2 files
-2025/03/25-18:41:22.910 53f4 Generated table #893@1: 46089 keys, 2207528 bytes
-2025/03/25-18:41:23.014 53f4 Generated table #894@1: 63545 keys, 2232363 bytes
-2025/03/25-18:41:23.063 53f4 Generated table #895@1: 9221 keys, 2164591 bytes
-2025/03/25-18:41:23.103 53f4 Generated table #896@1: 2294 keys, 2153696 bytes
-2025/03/25-18:41:23.147 53f4 Generated table #897@1: 2614 keys, 2155693 bytes
-2025/03/25-18:41:23.183 53f4 Generated table #898@1: 3155 keys, 2152020 bytes
-2025/03/25-18:41:23.232 53f4 Generated table #899@1: 3012 keys, 2161946 bytes
-2025/03/25-18:41:23.297 53f4 Generated table #900@1: 20549 keys, 2202886 bytes
-2025/03/25-18:41:23.379 53f4 Generated table #901@1: 25956 keys, 2269203 bytes
-2025/03/25-18:41:23.458 53f4 Generated table #902@1: 33822 keys, 2241635 bytes
-2025/03/25-18:41:23.461 53f4 Generated table #903@1: 118 keys, 24883 bytes
-2025/03/25-18:41:23.461 53f4 Compacted 1@1 + 10@2 files => 21966444 bytes
-2025/03/25-18:41:23.462 53f4 compacted to: files[ 0 1 22 0 0 0 0 ]
-2025/03/25-18:41:23.462 53f4 Delete type=2 #871
-2025/03/25-18:41:23.462 53f4 Delete type=2 #872
-2025/03/25-18:41:23.462 53f4 Delete type=2 #873
-2025/03/25-18:41:23.462 53f4 Delete type=2 #874
-2025/03/25-18:41:23.463 53f4 Delete type=2 #875
-2025/03/25-18:41:23.463 53f4 Delete type=2 #876
-2025/03/25-18:41:23.463 53f4 Delete type=2 #877
-2025/03/25-18:41:23.463 53f4 Delete type=2 #878
-2025/03/25-18:41:23.463 53f4 Delete type=2 #879
-2025/03/25-18:41:23.463 53f4 Delete type=2 #880
-2025/03/25-18:41:23.463 53f4 Delete type=2 #891
-2025/03/25-18:41:24.545 53f4 Compacting 1@1 + 6@2 files
-2025/03/25-18:41:24.603 53f4 Generated table #904@1: 9809 keys, 2157855 bytes
-2025/03/25-18:41:24.657 53f4 Generated table #905@1: 16479 keys, 2144594 bytes
-2025/03/25-18:41:24.755 53f4 Generated table #906@1: 106703 keys, 2259068 bytes
-2025/03/25-18:41:24.847 53f4 Generated table #907@1: 100405 keys, 2249553 bytes
-2025/03/25-18:41:24.948 53f4 Generated table #908@1: 100480 keys, 2249995 bytes
-2025/03/25-18:41:25.041 53f4 Generated table #909@1: 100702 keys, 2251006 bytes
-2025/03/25-18:41:25.049 53f4 Generated table #910@1: 5828 keys, 136083 bytes
-2025/03/25-18:41:25.049 53f4 Compacted 1@1 + 6@2 files => 13448154 bytes
-2025/03/25-18:41:25.051 53f4 compacted to: files[ 0 0 23 0 0 0 0 ]
-2025/03/25-18:41:25.051 53f4 Delete type=2 #882
-2025/03/25-18:41:25.051 53f4 Delete type=2 #883
-2025/03/25-18:41:25.051 53f4 Delete type=2 #884
-2025/03/25-18:41:25.051 53f4 Delete type=2 #885
-2025/03/25-18:41:25.051 53f4 Delete type=2 #886
-2025/03/25-18:41:25.051 53f4 Delete type=2 #887
-2025/03/25-18:41:25.052 53f4 Delete type=2 #892
+2025/03/26-13:16:56.361 a704 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/03/26-13:16:56.362 a704 Recovering log #1492
+2025/03/26-13:16:56.378 a704 Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/001492.log 
+2025/03/26-13:16:56.754 9d34 Level-0 table #1517: started
+2025/03/26-13:16:56.763 9d34 Level-0 table #1517: 263248 bytes OK
+2025/03/26-13:16:56.765 9d34 Delete type=0 #1492
+2025/03/26-13:16:56.766 a058 Manual compaction at level-0 from '\x00A\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00B\x00\x00\x00' @ 0 : 0; will stop at '\x00A\x00\x00\x05' @ 3328898 : 1
+2025/03/26-13:16:56.766 a058 Compacting 1@0 + 0@1 files
+2025/03/26-13:16:56.775 a058 Generated table #1518@0: 5485 keys, 115783 bytes
+2025/03/26-13:16:56.777 a058 Generated table #1519@0: 137 keys, 11443 bytes
+2025/03/26-13:16:56.777 a058 Compacted 1@0 + 0@1 files => 127226 bytes
+2025/03/26-13:16:56.778 a058 compacted to: files[ 0 2 20 0 0 0 0 ]
+2025/03/26-13:16:56.779 a058 Delete type=2 #1517
+2025/03/26-13:16:56.780 a704 Manual compaction at level-0 from '\x00A\x00\x00\x05' @ 3328898 : 1 .. '\x00B\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/03/26-13:16:57.776 9d34 Compacting 1@1 + 10@2 files
+2025/03/26-13:16:57.844 9d34 Generated table #1520@1: 66454 keys, 2254265 bytes
+2025/03/26-13:16:57.948 9d34 Generated table #1521@1: 53310 keys, 2215889 bytes
+2025/03/26-13:16:58.012 9d34 Generated table #1522@1: 28902 keys, 2192303 bytes
+2025/03/26-13:16:58.046 9d34 Generated table #1523@1: 1997 keys, 2155410 bytes
+2025/03/26-13:16:58.071 9d34 Generated table #1524@1: 2695 keys, 2158389 bytes
+2025/03/26-13:16:58.092 9d34 Generated table #1525@1: 2870 keys, 2155470 bytes
+2025/03/26-13:16:58.113 9d34 Generated table #1526@1: 2790 keys, 2154739 bytes
+2025/03/26-13:16:58.138 9d34 Generated table #1527@1: 7659 keys, 2168729 bytes
+2025/03/26-13:16:58.186 9d34 Generated table #1528@1: 29097 keys, 2261782 bytes
+2025/03/26-13:16:58.229 9d34 Generated table #1529@1: 26180 keys, 2263450 bytes
+2025/03/26-13:16:58.232 9d34 Generated table #1530@1: 107 keys, 48724 bytes
+2025/03/26-13:16:58.232 9d34 Compacted 1@1 + 10@2 files => 22029150 bytes
+2025/03/26-13:16:58.233 9d34 compacted to: files[ 0 1 21 0 0 0 0 ]
+2025/03/26-13:16:58.234 9d34 Delete type=2 #1496
+2025/03/26-13:16:58.234 9d34 Delete type=2 #1497
+2025/03/26-13:16:58.234 9d34 Delete type=2 #1498
+2025/03/26-13:16:58.234 9d34 Delete type=2 #1499
+2025/03/26-13:16:58.234 9d34 Delete type=2 #1500
+2025/03/26-13:16:58.234 9d34 Delete type=2 #1501
+2025/03/26-13:16:58.234 9d34 Delete type=2 #1502
+2025/03/26-13:16:58.234 9d34 Delete type=2 #1503
+2025/03/26-13:16:58.234 9d34 Delete type=2 #1504
+2025/03/26-13:16:58.234 9d34 Delete type=2 #1505
+2025/03/26-13:16:58.234 9d34 Delete type=2 #1518
+2025/03/26-13:16:58.656 a704 Compacting 1@1 + 8@2 files
+2025/03/26-13:16:58.748 a704 Generated table #1531@1: 29498 keys, 2250602 bytes
+2025/03/26-13:16:58.796 a704 Generated table #1532@1: 7289 keys, 2133912 bytes
+2025/03/26-13:16:58.865 a704 Generated table #1533@1: 28493 keys, 2157175 bytes
+2025/03/26-13:16:58.964 a704 Generated table #1534@1: 103825 keys, 2255616 bytes
+2025/03/26-13:16:59.062 a704 Generated table #1535@1: 100505 keys, 2251390 bytes
+2025/03/26-13:16:59.159 a704 Generated table #1536@1: 101099 keys, 2252649 bytes
+2025/03/26-13:16:59.249 a704 Generated table #1537@1: 100584 keys, 2250438 bytes
+2025/03/26-13:16:59.281 a704 Generated table #1538@1: 29776 keys, 681424 bytes
+2025/03/26-13:16:59.281 a704 Compacted 1@1 + 8@2 files => 16233206 bytes
+2025/03/26-13:16:59.282 a704 compacted to: files[ 0 0 21 0 0 0 0 ]
+2025/03/26-13:16:59.283 a704 Delete type=2 #1507
+2025/03/26-13:16:59.283 a704 Delete type=2 #1508
+2025/03/26-13:16:59.283 a704 Delete type=2 #1509
+2025/03/26-13:16:59.283 a704 Delete type=2 #1510
+2025/03/26-13:16:59.283 a704 Delete type=2 #1511
+2025/03/26-13:16:59.283 a704 Delete type=2 #1512
+2025/03/26-13:16:59.283 a704 Delete type=2 #1513
+2025/03/26-13:16:59.283 a704 Delete type=2 #1514
+2025/03/26-13:16:59.283 a704 Delete type=2 #1519

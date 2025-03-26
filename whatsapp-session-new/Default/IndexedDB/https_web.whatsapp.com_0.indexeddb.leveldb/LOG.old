@@ -1,55 +1,65 @@
-2025/03/25-18:39:05.971 7cb8 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/03/25-18:39:05.971 7cb8 Recovering log #845
-2025/03/25-18:39:06.012 7cb8 Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000845.log 
-2025/03/25-18:39:06.630 31a0 Level-0 table #868: started
-2025/03/25-18:39:06.661 31a0 Level-0 table #868: 1070494 bytes OK
-2025/03/25-18:39:06.663 31a0 Delete type=0 #845
-2025/03/25-18:39:06.664 1c3c Manual compaction at level-0 from '\x00#\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00$\x00\x00\x00' @ 0 : 0; will stop at '\x00#\x00\x00\x05' @ 2850648 : 1
-2025/03/25-18:39:06.664 1c3c Compacting 1@0 + 0@1 files
-2025/03/25-18:39:06.688 1c3c Generated table #869@0: 20729 keys, 222180 bytes
-2025/03/25-18:39:06.706 1c3c Generated table #870@0: 14377 keys, 385498 bytes
-2025/03/25-18:39:06.707 1c3c Compacted 1@0 + 0@1 files => 607678 bytes
-2025/03/25-18:39:06.707 1c3c compacted to: files[ 0 2 20 0 0 0 0 ]
-2025/03/25-18:39:06.708 1c3c Delete type=2 #868
-2025/03/25-18:39:06.709 1c3c Manual compaction at level-0 from '\x00#\x00\x00\x05' @ 2850648 : 1 .. '\x00$\x00\x00\x00' @ 0 : 0; will stop at (end)
-2025/03/25-18:39:07.763 a0a4 Compacting 1@1 + 10@2 files
-2025/03/25-18:39:07.822 a0a4 Generated table #871@1: 45422 keys, 2207485 bytes
-2025/03/25-18:39:07.932 a0a4 Generated table #872@1: 63648 keys, 2232186 bytes
-2025/03/25-18:39:07.973 a0a4 Generated table #873@1: 8737 keys, 2164151 bytes
-2025/03/25-18:39:08.011 a0a4 Generated table #874@1: 2314 keys, 2153368 bytes
-2025/03/25-18:39:08.032 a0a4 Generated table #875@1: 2613 keys, 2155789 bytes
-2025/03/25-18:39:08.052 a0a4 Generated table #876@1: 3147 keys, 2153016 bytes
-2025/03/25-18:39:08.074 a0a4 Generated table #877@1: 3009 keys, 2162607 bytes
-2025/03/25-18:39:08.105 a0a4 Generated table #878@1: 20810 keys, 2203793 bytes
-2025/03/25-18:39:08.150 a0a4 Generated table #879@1: 25931 keys, 2269380 bytes
-2025/03/25-18:39:08.194 a0a4 Generated table #880@1: 33675 keys, 2239729 bytes
-2025/03/25-18:39:08.196 a0a4 Generated table #881@1: 153 keys, 25000 bytes
-2025/03/25-18:39:08.196 a0a4 Compacted 1@1 + 10@2 files => 21966504 bytes
-2025/03/25-18:39:08.196 a0a4 compacted to: files[ 0 1 21 0 0 0 0 ]
-2025/03/25-18:39:08.197 a0a4 Delete type=2 #849
-2025/03/25-18:39:08.197 a0a4 Delete type=2 #850
-2025/03/25-18:39:08.197 a0a4 Delete type=2 #851
-2025/03/25-18:39:08.197 a0a4 Delete type=2 #852
-2025/03/25-18:39:08.197 a0a4 Delete type=2 #853
-2025/03/25-18:39:08.197 a0a4 Delete type=2 #854
-2025/03/25-18:39:08.197 a0a4 Delete type=2 #855
-2025/03/25-18:39:08.197 a0a4 Delete type=2 #856
-2025/03/25-18:39:08.197 a0a4 Delete type=2 #857
-2025/03/25-18:39:08.197 a0a4 Delete type=2 #858
-2025/03/25-18:39:08.197 a0a4 Delete type=2 #869
-2025/03/25-18:39:09.126 1c3c Compacting 1@1 + 6@2 files
-2025/03/25-18:39:09.197 1c3c Generated table #882@1: 9809 keys, 2157832 bytes
-2025/03/25-18:39:09.241 1c3c Generated table #883@1: 21416 keys, 2149847 bytes
-2025/03/25-18:39:09.332 1c3c Generated table #884@1: 104250 keys, 2256361 bytes
-2025/03/25-18:39:09.418 1c3c Generated table #885@1: 100413 keys, 2249876 bytes
-2025/03/25-18:39:09.501 1c3c Generated table #886@1: 100220 keys, 2249727 bytes
-2025/03/25-18:39:09.583 1c3c Generated table #887@1: 93970 keys, 2109131 bytes
-2025/03/25-18:39:09.583 1c3c Compacted 1@1 + 6@2 files => 13172774 bytes
-2025/03/25-18:39:09.583 1c3c compacted to: files[ 0 0 21 0 0 0 0 ]
-2025/03/25-18:39:09.584 1c3c Delete type=2 #860
-2025/03/25-18:39:09.584 1c3c Delete type=2 #861
-2025/03/25-18:39:09.584 1c3c Delete type=2 #862
-2025/03/25-18:39:09.584 1c3c Delete type=2 #863
-2025/03/25-18:39:09.584 1c3c Delete type=2 #864
-2025/03/25-18:39:09.584 1c3c Delete type=2 #865
-2025/03/25-18:39:09.584 1c3c Delete type=2 #870
+2025/03/26-13:13:21.064 1448 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/03/26-13:13:21.065 1448 Recovering log #1475
+2025/03/26-13:13:21.071 1448 Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/001475.log 
+2025/03/26-13:13:21.517 aa18 Level-0 table #1493: started
+2025/03/26-13:13:21.526 aa18 Level-0 table #1493: 268490 bytes OK
+2025/03/26-13:13:21.528 aa18 Delete type=0 #1475
+2025/03/26-13:13:21.529 1448 Manual compaction at level-0 from '\x00@\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00A\x00\x00\x00' @ 0 : 0; will stop at '\x00@\x00\x00\x05' @ 3319181 : 1
+2025/03/26-13:13:21.530 1448 Compacting 1@0 + 0@1 files
+2025/03/26-13:13:21.542 1448 Generated table #1494@0: 5439 keys, 115559 bytes
+2025/03/26-13:13:21.550 1448 Generated table #1495@0: 152 keys, 12180 bytes
+2025/03/26-13:13:21.550 1448 Compacted 1@0 + 0@1 files => 127739 bytes
+2025/03/26-13:13:21.555 1448 compacted to: files[ 0 2 25 0 0 0 0 ]
+2025/03/26-13:13:21.557 1448 Delete type=2 #1493
+2025/03/26-13:13:21.559 1448 Manual compaction at level-0 from '\x00@\x00\x00\x05' @ 3319181 : 1 .. '\x00A\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/03/26-13:13:22.627 a2c4 Compacting 1@1 + 16@2 files
+2025/03/26-13:13:22.698 a2c4 Generated table #1496@1: 65714 keys, 2252944 bytes
+2025/03/26-13:13:22.775 a2c4 Generated table #1497@1: 53894 keys, 2215406 bytes
+2025/03/26-13:13:22.848 a2c4 Generated table #1498@1: 28009 keys, 2197966 bytes
+2025/03/26-13:13:22.879 a2c4 Generated table #1499@1: 1994 keys, 2153732 bytes
+2025/03/26-13:13:22.901 a2c4 Generated table #1500@1: 2682 keys, 2158077 bytes
+2025/03/26-13:13:22.922 a2c4 Generated table #1501@1: 2894 keys, 2160397 bytes
+2025/03/26-13:13:22.942 a2c4 Generated table #1502@1: 2824 keys, 2154886 bytes
+2025/03/26-13:13:22.971 a2c4 Generated table #1503@1: 8346 keys, 2168633 bytes
+2025/03/26-13:13:23.019 a2c4 Generated table #1504@1: 28852 keys, 2261818 bytes
+2025/03/26-13:13:23.064 a2c4 Generated table #1505@1: 25759 keys, 2265051 bytes
+2025/03/26-13:13:23.067 a2c4 Generated table #1506@1: 27 keys, 155726 bytes
+2025/03/26-13:13:23.067 a2c4 Compacted 1@1 + 16@2 files => 22144636 bytes
+2025/03/26-13:13:23.067 a2c4 compacted to: files[ 0 1 20 0 0 0 0 ]
+2025/03/26-13:13:23.068 a2c4 Delete type=2 #1373
+2025/03/26-13:13:23.068 a2c4 Delete type=2 #1374
+2025/03/26-13:13:23.068 a2c4 Delete type=2 #1375
+2025/03/26-13:13:23.068 a2c4 Delete type=2 #1376
+2025/03/26-13:13:23.068 a2c4 Delete type=2 #1377
+2025/03/26-13:13:23.068 a2c4 Delete type=2 #1378
+2025/03/26-13:13:23.068 a2c4 Delete type=2 #1379
+2025/03/26-13:13:23.068 a2c4 Delete type=2 #1405
+2025/03/26-13:13:23.068 a2c4 Delete type=2 #1414
+2025/03/26-13:13:23.068 a2c4 Delete type=2 #1431
+2025/03/26-13:13:23.068 a2c4 Delete type=2 #1448
+2025/03/26-13:13:23.068 a2c4 Delete type=2 #1465
+2025/03/26-13:13:23.068 a2c4 Delete type=2 #1479
+2025/03/26-13:13:23.068 a2c4 Delete type=2 #1480
+2025/03/26-13:13:23.068 a2c4 Delete type=2 #1481
+2025/03/26-13:13:23.068 a2c4 Delete type=2 #1482
+2025/03/26-13:13:23.068 a2c4 Delete type=2 #1494
+2025/03/26-13:13:23.489 1448 Compacting 1@1 + 8@2 files
+2025/03/26-13:13:23.550 1448 Generated table #1507@1: 29492 keys, 2248914 bytes
+2025/03/26-13:13:23.649 1448 Generated table #1508@1: 7287 keys, 2135018 bytes
+2025/03/26-13:13:23.700 1448 Generated table #1509@1: 28730 keys, 2159128 bytes
+2025/03/26-13:13:23.759 1448 Generated table #1510@1: 103720 keys, 2254221 bytes
+2025/03/26-13:13:23.813 1448 Generated table #1511@1: 100583 keys, 2251028 bytes
+2025/03/26-13:13:23.863 1448 Generated table #1512@1: 101085 keys, 2252447 bytes
+2025/03/26-13:13:23.916 1448 Generated table #1513@1: 100615 keys, 2250704 bytes
+2025/03/26-13:13:23.937 1448 Generated table #1514@1: 29499 keys, 674869 bytes
+2025/03/26-13:13:23.937 1448 Compacted 1@1 + 8@2 files => 16226329 bytes
+2025/03/26-13:13:23.938 1448 compacted to: files[ 0 0 20 0 0 0 0 ]
+2025/03/26-13:13:23.938 1448 Delete type=2 #1483
+2025/03/26-13:13:23.938 1448 Delete type=2 #1484
+2025/03/26-13:13:23.938 1448 Delete type=2 #1485
+2025/03/26-13:13:23.938 1448 Delete type=2 #1486
+2025/03/26-13:13:23.938 1448 Delete type=2 #1487
+2025/03/26-13:13:23.938 1448 Delete type=2 #1488
+2025/03/26-13:13:23.938 1448 Delete type=2 #1489
+2025/03/26-13:13:23.938 1448 Delete type=2 #1490
+2025/03/26-13:13:23.938 1448 Delete type=2 #1495

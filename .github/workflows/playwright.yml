@@ -3,6 +3,10 @@ name: Playwright Tests
 on:
   workflow_dispatch:
     inputs:
+      TYPE:
+        description: 'Type'
+        required: true
+        default: 'test1'
       GROUPNAME:
         description: 'Name of the group'
         required: true
@@ -25,6 +29,7 @@ on:
 env:
   GROUPNAME: ${{ github.event.inputs.GROUPNAME }}         
   PHONENUMBER: ${{ github.event.inputs.PHONENUMBER }}
+  TYPE: ${{ github.event.inputs.TYPE }}
 jobs:
   test:
     timeout-minutes: 60
@@ -38,9 +43,11 @@ jobs:
       run: |
         echo "Phone Number : ${{ github.event.inputs.GROUPNAME }}"
         echo "Group Name : ${{ github.event.inputs.PHONENUMBER }}"
+        echo "Type : ${{ github.event.inputs.TYPE }}"
       env:
         GROUPNAME: ${{ github.event.inputs.GROUPNAME }}        
         PHONENUMBER: ${{ github.event.inputs.PHONENUMBER }} 
+        TYPE: ${{ github.event.inputs.TYPE }} 
     - name: Install dependencies
       run: npm ci
     - name: Install only Chromium
