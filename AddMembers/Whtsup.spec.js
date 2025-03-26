@@ -9,10 +9,10 @@ function myTest() {
     //  const GroupName = process.env.GROUPNAME
     //  const PhnNumber = process.env.PHONENUMBER
     // const integrationType=process.env.TYPE;
-    // const integrationType = "ADD";
-    const integrationType = "REMOVE";
-    const GroupName = "Testing D";
-    const PhnNumber = "76390029";
+    const integrationType = "ADD";
+    // const integrationType = "REMOVE";
+    const GroupName = "Testing C";
+    const PhnNumber = "7639002971";
     const phoneNumberArray = PhnNumber.split(",");
 
     log("GroupName", GroupName);
