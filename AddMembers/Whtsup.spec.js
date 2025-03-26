@@ -6,13 +6,13 @@ const userDataDir = "whatsapp-session-new"; // Directory to save session
 
 function myTest() {
   test("Login to WhatsApp and Save Session", async () => {
-     const GroupName = process.env.GROUPNAME
-     const PhnNumber = process.env.PHONENUMBER
-    const integrationType=process.env.TYPE;
-    // // const integrationType = "ADD";
-    // const integrationType = "REMOVE";
-    // const GroupName = "Testing D";
-    // const PhnNumber = "7639002971,8940766936";
+    //  const GroupName = process.env.GROUPNAME
+    //  const PhnNumber = process.env.PHONENUMBER
+    // const integrationType=process.env.TYPE;
+    // const integrationType = "ADD";
+    const integrationType = "REMOVE";
+    const GroupName = "Testing D";
+    const PhnNumber = "7639002971,8940766936";
     const phoneNumberArray = PhnNumber.split(",");
 
     log("GroupName", GroupName);
@@ -40,6 +40,8 @@ function myTest() {
       await page.getByRole("button", { name: GroupName }).click();
 
       if (integrationType === "ADD") {
+        log("Add")
+
         await page
           .getByRole("button", { name: "Add member", exact: true })
           .click();
@@ -61,8 +63,7 @@ function myTest() {
           .getByRole("button", { name: "Add member" })
           .click();
       } else if (integrationType === "REMOVE") {
-        // await page.locator('.x12lumcd.x1n2onr6 .x6ikm8r.x10wlt62.xlyipyv.xuxw1ft').click();
-        // await page.getByRole('button', { name: '1 member' }).nth(1).click();
+             log("Remove")
         await page.locator('[role="button"]:has-text("member")').nth(1).click();
 
 
@@ -75,7 +76,7 @@ function myTest() {
           .fill(number);
           await page.getByRole('textbox', { name: 'Search contacts' }).press('ArrowDown');
           await page.keyboard.press("Enter")
-        // await page.getByRole("button", { name: "Remove" }).click();
+        await page.getByRole("button", { name: "Remove" }).click();
         }
       }
     } catch (error) {
