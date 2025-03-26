@@ -6,13 +6,13 @@ const userDataDir = "whatsapp-session-new"; // Directory to save session
 
 function myTest() {
   test("Login to WhatsApp and Save Session", async () => {
-     const GroupName = process.env.GROUPNAME
-     const PhnNumber = process.env.PHONENUMBER
-    const integrationType=process.env.TYPE;
-    // const integrationType = "ADD";
-    // // const integrationType = "REMOVE";
-    // const GroupName = "Testing B";
-    // const PhnNumber = "7639002971,9600392639,8940766936";
+    //  const GroupName = process.env.GROUPNAME
+    //  const PhnNumber = process.env.PHONENUMBER
+    // const integrationType=process.env.TYPE;
+    const integrationType = "ADD";
+    // const integrationType = "REMOVE";
+    const GroupName = "Testing B";
+    const PhnNumber = "7639002971,9600392639,8940766936";
     const phoneNumberArray = PhnNumber.split(",");
 
     log("GroupName", GroupName);
@@ -44,6 +44,7 @@ function myTest() {
         await page
           .getByRole("button", { name: "Add member", exact: true })
           .click();
+
         await page
           .getByRole("textbox", { name: "Search name or number" })
           .getByRole("paragraph")
@@ -52,6 +53,8 @@ function myTest() {
           await page
             .getByRole("textbox", { name: "Search name or number" })
             .fill(number);
+        await page.waitForTimeout(2000);
+
           log("number", number);
           const alreadyInTheGroup = await page.locator(
             "text=Already added to group"

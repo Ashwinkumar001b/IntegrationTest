@@ -1,7 +1,7 @@
-[0326/161758.054:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yY/r/QUWJonuJHGN.js (157)
-[0326/161803.671:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yY/r/QUWJonuJHGN.js (157)
-[0326/161810.177:INFO:CONSOLE(70)] "ErrorUtils caught an error:
+[0326/175911.063:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yY/r/QUWJonuJHGN.js (157)
+[0326/175912.120:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yY/r/QUWJonuJHGN.js (157)
+[0326/175915.085:INFO:CONSOLE(70)] "ErrorUtils caught an error:
 
-Converting to a string will drop content data. Hash="undefined" Translation="{author} joined from the community" Content="{"key":null,"ref":null,"props":{"contact":{"id":"917603936091@c.us","pushname":"nivetha","type":"in","isContactSyncCompleted":1,"disappearingModeDuration":0,"disappearingModeSettingTimestamp":1677067901,"textStatusLastUpdateTime":-1,"syncToAddressboo" (type=object,Object)
+Converting to a string will drop content data. Hash="undefined" Translation="{author} joined from the community" Content="{"key":null,"ref":null,"props":{"contact":{"id":"917603936091@c.us","pushname":"nivetha","type":"in","isBusiness":false,"isEnterprise":false,"isSmb":false,"isContactSyncCompleted":0,"disappearingModeDuration":0,"disappearingModeSettingTimestamp":1677" (type=object,Object)
 
 Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/yn/r/MCfSXo6ZDiu.js (70)
