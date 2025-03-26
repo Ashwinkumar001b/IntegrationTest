@@ -1,45 +1,36 @@
-2025/03/26-15:57:18.094 6040 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/03/26-15:57:18.095 6040 Recovering log #1673
-2025/03/26-15:57:18.102 6040 Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/001673.log 
-2025/03/26-15:57:22.548 6040 Level-0 table #1691: started
-2025/03/26-15:57:22.556 6040 Level-0 table #1691: 182443 bytes OK
-2025/03/26-15:57:22.558 6040 Delete type=0 #1673
-2025/03/26-15:57:22.559 a8dc Manual compaction at level-0 from '\x00L\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00M\x00\x00\x00' @ 0 : 0; will stop at '\x00L\x00\x00\x05' @ 3419724 : 1
-2025/03/26-15:57:22.559 a8dc Compacting 1@0 + 0@1 files
-2025/03/26-15:57:22.568 a8dc Generated table #1692@0: 3871 keys, 75774 bytes
-2025/03/26-15:57:22.571 a8dc Generated table #1693@0: 80 keys, 6307 bytes
-2025/03/26-15:57:22.571 a8dc Compacted 1@0 + 0@1 files => 82081 bytes
-2025/03/26-15:57:22.573 a8dc compacted to: files[ 0 2 20 0 0 0 0 ]
-2025/03/26-15:57:22.573 a8dc Delete type=2 #1691
-2025/03/26-15:57:22.574 6040 Manual compaction at level-0 from '\x00L\x00\x00\x05' @ 3419724 : 1 .. '\x00M\x00\x00\x00' @ 0 : 0; will stop at (end)
-2025/03/26-15:57:24.145 6994 Compacting 1@1 + 8@2 files
-2025/03/26-15:57:24.285 6994 Generated table #1694@1: 28804 keys, 2245391 bytes
-2025/03/26-15:57:24.357 6994 Generated table #1695@1: 8010 keys, 2146623 bytes
-2025/03/26-15:57:24.416 6994 Generated table #1696@1: 11635 keys, 2137221 bytes
-2025/03/26-15:57:24.525 6994 Generated table #1697@1: 105348 keys, 2257444 bytes
-2025/03/26-15:57:24.617 6994 Generated table #1698@1: 100436 keys, 2250554 bytes
-2025/03/26-15:57:24.698 6994 Generated table #1699@1: 101038 keys, 2251626 bytes
-2025/03/26-15:57:24.795 6994 Generated table #1700@1: 100158 keys, 2250244 bytes
-2025/03/26-15:57:24.843 6994 Generated table #1701@1: 47580 keys, 1072487 bytes
-2025/03/26-15:57:24.843 6994 Compacted 1@1 + 8@2 files => 16611590 bytes
-2025/03/26-15:57:24.845 6994 compacted to: files[ 0 1 20 0 0 0 0 ]
-2025/03/26-15:57:24.845 6994 Delete type=2 #1677
-2025/03/26-15:57:24.845 6994 Delete type=2 #1678
-2025/03/26-15:57:24.846 6994 Delete type=2 #1679
-2025/03/26-15:57:24.846 6994 Delete type=2 #1680
-2025/03/26-15:57:24.846 6994 Delete type=2 #1681
-2025/03/26-15:57:24.846 6994 Delete type=2 #1682
-2025/03/26-15:57:24.846 6994 Delete type=2 #1683
-2025/03/26-15:57:24.846 6994 Delete type=2 #1684
-2025/03/26-15:57:24.846 6994 Delete type=2 #1693
-2025/03/26-15:57:25.355 6994 Compacting 1@1 + 3@2 files
-2025/03/26-15:57:25.460 6994 Generated table #1702@1: 72942 keys, 2261296 bytes
-2025/03/26-15:57:25.551 6994 Generated table #1703@1: 49577 keys, 2213378 bytes
-2025/03/26-15:57:25.639 6994 Generated table #1704@1: 35222 keys, 2198397 bytes
-2025/03/26-15:57:25.642 6994 Generated table #1705@1: 18 keys, 16761 bytes
-2025/03/26-15:57:25.642 6994 Compacted 1@1 + 3@2 files => 6689832 bytes
-2025/03/26-15:57:25.643 6994 compacted to: files[ 0 0 21 0 0 0 0 ]
-2025/03/26-15:57:25.644 6994 Delete type=2 #1685
-2025/03/26-15:57:25.644 6994 Delete type=2 #1686
-2025/03/26-15:57:25.644 6994 Delete type=2 #1687
-2025/03/26-15:57:25.644 6994 Delete type=2 #1692
+2025/03/26-16:17:58.081 1dc0 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/03/26-16:17:58.083 1dc0 Recovering log #1707
+2025/03/26-16:17:58.095 1dc0 Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/001707.log 
+2025/03/26-16:18:01.835 1dc0 Level-0 table #1725: started
+2025/03/26-16:18:01.853 1dc0 Level-0 table #1725: 343627 bytes OK
+2025/03/26-16:18:01.856 1dc0 Delete type=0 #1707
+2025/03/26-16:18:01.858 55a4 Manual compaction at level-0 from '\x00O\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00P\x00\x00\x00' @ 0 : 0; will stop at '\x00O\x00\x00\x05' @ 3438954 : 1
+2025/03/26-16:18:01.858 55a4 Compacting 1@0 + 0@1 files
+2025/03/26-16:18:01.876 55a4 Generated table #1726@0: 7393 keys, 142152 bytes
+2025/03/26-16:18:01.879 55a4 Generated table #1727@0: 110 keys, 7095 bytes
+2025/03/26-16:18:01.879 55a4 Compacted 1@0 + 0@1 files => 149247 bytes
+2025/03/26-16:18:01.881 55a4 compacted to: files[ 0 2 22 0 0 0 0 ]
+2025/03/26-16:18:01.882 55a4 Manual compaction at level-0 from '\x00O\x00\x00\x05' @ 3438954 : 1 .. '\x00P\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/03/26-16:18:04.489 1dc0 Compacting 1@1 + 3@2 files
+2025/03/26-16:18:04.617 1dc0 Generated table #1728@1: 74623 keys, 2261929 bytes
+2025/03/26-16:18:04.762 1dc0 Generated table #1729@1: 48555 keys, 2211779 bytes
+2025/03/26-16:18:04.884 1dc0 Generated table #1730@1: 36699 keys, 2200614 bytes
+2025/03/26-16:18:04.888 1dc0 Generated table #1731@1: 32 keys, 34728 bytes
+2025/03/26-16:18:04.888 1dc0 Compacted 1@1 + 3@2 files => 6709050 bytes
+2025/03/26-16:18:04.890 1dc0 compacted to: files[ 0 1 23 0 0 0 0 ]
+2025/03/26-16:18:04.890 1dc0 Delete type=2 #1711
+2025/03/26-16:18:04.891 1dc0 Delete type=2 #1712
+2025/03/26-16:18:04.891 1dc0 Delete type=2 #1713
+2025/03/26-16:18:04.891 1dc0 Delete type=2 #1725
+2025/03/26-16:18:04.891 1dc0 Delete type=2 #1726
+2025/03/26-16:18:07.310 1dc0 Compacting 1@1 + 8@2 files
+2025/03/26-16:18:07.410 1dc0 Generated table #1732@1: 28804 keys, 2245477 bytes
+2025/03/26-16:18:07.451 1dc0 Generated table #1733@1: 8012 keys, 2145902 bytes
+2025/03/26-16:18:07.508 1dc0 Generated table #1734@1: 11635 keys, 2137221 bytes
+2025/03/26-16:18:07.603 1dc0 Generated table #1735@1: 105348 keys, 2257444 bytes
+2025/03/26-16:18:07.698 1dc0 Generated table #1736@1: 100436 keys, 2250554 bytes
+2025/03/26-16:18:07.780 1dc0 Generated table #1737@1: 101038 keys, 2251626 bytes
+2025/03/26-16:18:07.902 1dc0 Generated table #1738@1: 100158 keys, 2250244 bytes
+2025/03/26-16:18:07.987 1dc0 Generated table #1739@1: 47595 keys, 1073410 bytes
+2025/03/26-16:18:07.987 1dc0 Compacted 1@1 + 8@2 files => 16611878 bytes
+2025/03/26-16:18:07.989 1dc0 compacted to: files[ 0 0 23 0 0 0 0 ]

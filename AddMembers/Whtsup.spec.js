@@ -65,6 +65,7 @@ function myTest() {
         log("Added successfully")
 
       } else if (integrationType === "REMOVE") {
+
         await page.locator('[role="button"]:has-text("member")').nth(1).click();
 
 
@@ -75,6 +76,8 @@ function myTest() {
         await page
           .getByRole("textbox", { name: "Search contacts" })
           .fill(number);
+          await page.waitForTimeout(3000);
+
           await page.getByRole('textbox', { name: 'Search contacts' }).press('ArrowDown');
 
           await page.keyboard.press("Enter")
