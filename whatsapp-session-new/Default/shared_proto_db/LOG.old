@@ -1,3 +1,3 @@
-2025/03/26-15:09:28.242 6e5c Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db/MANIFEST-000001
-2025/03/26-15:09:28.243 6e5c Recovering log #3
-2025/03/26-15:09:28.247 6e5c Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db/000003.log 
+2025/03/26-15:20:01.077 7240 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db/MANIFEST-000001
+2025/03/26-15:20:01.079 7240 Recovering log #3
+2025/03/26-15:20:01.081 7240 Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db/000003.log 

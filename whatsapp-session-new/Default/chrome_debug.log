@@ -1,7 +1,7 @@
-[0325/183905.946:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yc/r/vM2j2-lsa2a.js (157)
-[0325/183907.204:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yc/r/vM2j2-lsa2a.js (157)
-[0325/183910.292:INFO:CONSOLE(70)] "ErrorUtils caught an error:
+[0326/151906.411:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yY/r/QUWJonuJHGN.js (157)
+[0326/151911.151:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yY/r/QUWJonuJHGN.js (157)
+[0326/151914.689:INFO:CONSOLE(70)] "ErrorUtils caught an error:
 
-Converting to a string will drop content data. Hash="undefined" Translation="You added {names}" Content="{"key":null,"ref":null,"props":{"contact":{"id":"917639002971@c.us","name":"Lokesh(Technorucs)","shortName":"Lokesh(Technorucs)","pushname":"Logii✨","type":"in","isContactSyncCompleted":1,"textStatusLastUpdateTime":-1,"syncToAddressbook":true},"showN" (type=object,Object)
+Converting to a string will drop content data. Hash="undefined" Translation="You removed {names}" Content="{"key":null,"ref":null,"props":{"contact":{"id":"917639002971@c.us","name":"Lokesh(Technorucs)","shortName":"Lokesh(Technorucs)","pushname":"Logii✨","type":"in","isBusiness":false,"isEnterprise":false,"isSmb":false,"isContactSyncCompleted":1,"textSta" (type=object,Object)
 
-Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/y6/r/unfwRslK8eX.js (70)
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/yn/r/MCfSXo6ZDiu.js (70)

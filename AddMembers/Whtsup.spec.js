@@ -6,13 +6,13 @@ const userDataDir = "whatsapp-session-new"; // Directory to save session
 
 function myTest() {
   test("Login to WhatsApp and Save Session", async () => {
-    //  const GroupName = process.env.GROUPNAME
-    //  const PhnNumber = process.env.PHONENUMBER
-    // const integrationType=process.env.TYPE;
-    // const integrationType = "ADD";
-    const integrationType = "REMOVE";
-    const GroupName = "Testing D";
-    const PhnNumber = "7639002971,8940766936";
+     const GroupName = process.env.GROUPNAME
+     const PhnNumber = process.env.PHONENUMBER
+    const integrationType=process.env.TYPE;
+    // // const integrationType = "ADD";
+    // const integrationType = "REMOVE";
+    // const GroupName = "Testing D";
+    // const PhnNumber = "7639002971";
     const phoneNumberArray = PhnNumber.split(",");
 
     log("GroupName", GroupName);
