@@ -17,6 +17,7 @@ function myTest() {
 
     log("GroupName", GroupName);
     log("PhnNumber", phoneNumberArray);
+    log("integrationType", integrationType);
 
     const browser = await chromium.launchPersistentContext(userDataDir, {
       headless: true, // Open browser visibly
