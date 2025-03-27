@@ -6,14 +6,14 @@ const userDataDir = "whatsapp-session-new"; // Directory to save session
 
 function myTest() {
   test("Login to WhatsApp and Save Session", async () => {
-     const GroupName = process.env.GROUPNAME
-     const PhnNumber = process.env.PHONENUMBER
-    const integrationType=process.env.TYPE;
+    const GroupName = process.env.GROUPNAME;
+    const PhnNumber = process.env.PHONENUMBER;
+    const integrationType = process.env.TYPE;
     // const integrationType = "ADD";
-    // const integrationType = "REMOVE";
-    // const GroupName = "Test A";
-    // const PhnNumber = "7639002971";
-    const phoneNumberArray = PhnNumber.split(",");
+    // // const integrationType = "REMOVE";
+    // const GroupName = "Testing C";
+    // const PhnNumber = "7639002971,9600392639,8940766936";
+    // const phoneNumberArray = PhnNumber.split(",");
 
     log("GroupName", GroupName);
     log("PhnNumber", phoneNumberArray);
@@ -53,13 +53,22 @@ function myTest() {
           await page
             .getByRole("textbox", { name: "Search name or number" })
             .fill(number);
-        await page.waitForTimeout(2000);
+          await page.waitForTimeout(2000);
 
           log("number", number);
           const alreadyInTheGroup = await page.locator(
             "text=Already added to group"
           );
-          if (await alreadyInTheGroup.isHidden()) {
+
+          const noContactAdd = await page.locator(
+            "text=No chats, contacts or messages found"
+          );
+          await page.waitForTimeout(2000);
+
+          if (
+            (await alreadyInTheGroup.isHidden()) &&
+            (await noContactAdd.isHidden())
+          ) {
             await page.waitForTimeout(2000);
             await page.keyboard.press("Enter");
           }
@@ -69,7 +78,19 @@ function myTest() {
           .getByRole("dialog")
           .getByRole("button", { name: "Add member" })
           .click();
+        const invitePeople = await page.getByRole("button", {
+          name: "Invite to group",
+          exact: true,
+        });
+        if (await invitePeople.isVisible()) {
+          await page
+            .getByRole("button", { name: "Invite to group", exact: true })
+            .click();
+          await page.getByRole("button", { name: "Next" }).click();
+        }
         log("Added successfully");
+        //
+        //
       } else if (integrationType === "REMOVE") {
         await page.locator('[role="button"]:has-text("member")').nth(1).click();
         for (let number of phoneNumberArray) {
@@ -79,20 +100,16 @@ function myTest() {
             .fill(number);
           await page.waitForTimeout(2000);
 
-            const noContact = await page.locator(
-              "text=No contacts found"
-            );
-            if (await noContact.isHidden()) {
-             
-            
+          const noContact = await page.locator("text=No contacts found");
 
-          await page
-            .getByRole("textbox", { name: "Search contacts" })
-            .press("ArrowDown");
+          if (await noContact.isHidden()) {
+            await page
+              .getByRole("textbox", { name: "Search contacts" })
+              .press("ArrowDown");
 
-          await page.keyboard.press("Enter");
-          await page.getByRole("button", { name: "Remove" }).click();
-            }
+            await page.keyboard.press("Enter");
+            await page.getByRole("button", { name: "Remove" }).click();
+          }
         }
         log("Removed successfully");
       }
