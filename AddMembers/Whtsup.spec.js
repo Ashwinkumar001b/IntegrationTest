@@ -55,7 +55,7 @@ function myTest() {
           await page
             .getByRole("textbox", { name: "Search name or number" })
             .fill(number);
-          await page.waitForTimeout(2000);
+          await page.waitForTimeout(1000);
 
           log("number", number);
           const alreadyInTheGroup = await page.locator(
@@ -65,7 +65,7 @@ function myTest() {
           const noContactAdd = await page.locator(
             "text=No chats, contacts or messages found"
           );
-          await page.waitForTimeout(2000);
+          await page.waitForTimeout(1000);
 
           if (
             (await alreadyInTheGroup.isHidden()) &&
@@ -80,7 +80,7 @@ function myTest() {
           .getByRole("dialog")
           .getByRole("button", { name: "Add member" })
           .click();
-        await page.waitForTimeout(4000);
+        await page.waitForTimeout(3000);
         const invitePeople = await page.getByRole("button", {
           name: "Invite to group",
           exact: true,
