@@ -6,13 +6,13 @@ const userDataDir = "whatsapp-session-new"; // Directory to save session
 
 function myTest() {
   test("Login to WhatsApp and Save Session", { timeout: 120000 }, async () => {
-    const GroupName = process.env.GROUPNAME;
-    const PhnNumber = process.env.PHONENUMBER;
-    const integrationType = process.env.TYPE;
-    // const integrationType = "ADD";
-    // // const integrationType = "REMOVE";
-    // const GroupName = "Testing A";
-    // const PhnNumber = "7639002971,8940766936,9600392639";
+    // const GroupName = process.env.GROUPNAME;
+    // const PhnNumber = process.env.PHONENUMBER;
+    // const integrationType = process.env.TYPE;
+    const integrationType = "ADD";
+    // const integrationType = "REMOVE";
+    const GroupName = "Test A";
+    const PhnNumber = "7639002971,8940766936,9600392639";
     const phoneNumberArray = PhnNumber.split(",");
 
     log("GroupName", GroupName);
@@ -87,17 +87,16 @@ function myTest() {
           exact: true,
         });
         if (await invitePeople.isVisible()) {
-          await page.getByRole("button", { name: "Invite to group", exact: true }).click();
-          
+          await invitePeople.click();
+        
           await page.waitForSelector('[aria-label="Next"]', { visible: true, timeout: 5000 });
         
-          await page.waitForTimeout(2000); 
-          
+          await page.waitForTimeout(1000);
+        
           await page.getByRole('button', { name: 'Next' }).click();
         
           await page.waitForTimeout(2000);  
         }
-        
         // if (await invitePeople.isVisible()) {
 
         //   await page
