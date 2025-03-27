@@ -78,11 +78,12 @@ function myTest() {
           .getByRole("dialog")
           .getByRole("button", { name: "Add member" })
           .click();
+        await page.waitForTimeout(2000);
+
         const invitePeople = await page.getByRole("button", {
           name: "Invite to group",
           exact: true,
         });
-        await page.waitForTimeout(2000);
         if (await invitePeople.isVisible()) {
           await page
             .getByRole("button", { name: "Invite to group", exact: true })
