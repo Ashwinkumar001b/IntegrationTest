@@ -1,3 +1,3 @@
-2025/03/27-18:39:38.417 96c8 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Sync Data\LevelDB/MANIFEST-000001
-2025/03/27-18:39:38.420 96c8 Recovering log #3
-2025/03/27-18:39:38.421 96c8 Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Sync Data\LevelDB/000003.log 
+2025/03/27-18:51:41.099 6db8 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Sync Data\LevelDB/MANIFEST-000001
+2025/03/27-18:51:41.101 6db8 Recovering log #3
+2025/03/27-18:51:41.104 6db8 Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Sync Data\LevelDB/000003.log 
