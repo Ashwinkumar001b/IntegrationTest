@@ -13,7 +13,7 @@ function myTest() {
     // // const integrationType = "REMOVE";
     // const GroupName = "Testing C";
     // const PhnNumber = "7639002971,9600392639,8940766936";
-    // const phoneNumberArray = PhnNumber.split(",");
+    const phoneNumberArray = PhnNumber.split(",");
 
     log("GroupName", GroupName);
     log("PhnNumber", phoneNumberArray);
