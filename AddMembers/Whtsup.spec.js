@@ -5,7 +5,7 @@ import { ftruncate } from "fs";
 const userDataDir = "whatsapp-session-new"; // Directory to save session
 
 function myTest() {
-  test("Login to WhatsApp and Save Session", async () => {
+  test("Login to WhatsApp and Save Session", { timeout: 120000 }, async () => {
     const GroupName = process.env.GROUPNAME;
     const PhnNumber = process.env.PHONENUMBER;
     const integrationType = process.env.TYPE;
@@ -100,7 +100,7 @@ function myTest() {
           await page
             .getByRole("textbox", { name: "Search contacts" })
             .fill(number);
-          await page.waitForTimeout(2000);
+          await page.waitForTimeout(1000);
 
           const noContact = await page.locator("text=No contacts found");
 
