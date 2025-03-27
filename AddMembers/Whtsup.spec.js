@@ -5,13 +5,13 @@ import { ftruncate } from "fs";
 const userDataDir = "whatsapp-session-new"; // Directory to save session
 
 function myTest() {
-  test("Login to WhatsApp and Save Session", { timeout: 180000 }, async () => {
+  test("Login to WhatsApp and Save Session", { timeout: 210000 }, async () => {
     const GroupName = process.env.GROUPNAME;
     const PhnNumber = process.env.PHONENUMBER;
     const integrationType = process.env.TYPE;
     // const integrationType = "ADD";
     // // const integrationType = "REMOVE";
-    // const GroupName = "Test A";
+    // const GroupName = "Testing C";
     // const PhnNumber = "7639002971,8940766936,9600392639";
     const phoneNumberArray = PhnNumber.split(",");
 
@@ -30,7 +30,7 @@ function myTest() {
     // Wait until the WhatsApp chat list loads
     try {
       await page.waitForSelector("div[aria-label='Chat list']", {
-        timeout: 180000,
+        timeout: 210000,
       });
       console.log("✅ Login successful! Session saved.");
       await page
@@ -81,7 +81,6 @@ function myTest() {
           .getByRole("button", { name: "Add member" })
           .click();
         await page.waitForTimeout(3000);
-
         const invitePeople = await page.getByRole("button", {
           name: "Invite to group",
           exact: true,
@@ -97,16 +96,7 @@ function myTest() {
         
           await page.waitForTimeout(2000);  
         }
-        // if (await invitePeople.isVisible()) {
-
-        //   await page
-        //     .getByRole("button", { name: "Invite to group", exact: true })
-        //     .click();
-        //   // await page.waitForTimeout(3000);
-
-        //   await page.getByRole('button', { name: 'Next' }).click();
-
-        // }
+  
         log("Added successfully");
         //
         //
