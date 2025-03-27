@@ -40,7 +40,7 @@ function myTest() {
 
       await page.getByRole("button", { name: GroupName }).click();
 
-      if (integrationType === "ADD") {
+      if (integrationType == "ADD") {
         await page
           .getByRole("button", { name: "Add member", exact: true })
           .click();
@@ -93,7 +93,7 @@ function myTest() {
         log("Added successfully");
         //
         //
-      } else if (integrationType === "REMOVE") {
+      } else if (integrationType == "REMOVE") {
         await page.locator('[role="button"]:has-text("member")').nth(1).click();
         for (let number of phoneNumberArray) {
           await page.getByRole("textbox", { name: "Search contacts" }).fill("");
