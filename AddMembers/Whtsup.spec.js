@@ -36,7 +36,9 @@ function myTest() {
       await page
         .getByRole("textbox", { name: "Search input textbox" })
         .fill(GroupName);
-      await page.getByTitle(GroupName, { exact: true }).click();
+        await page.waitForTimeout(2000);
+
+      await page.getByText(GroupName, { exact: true }).nth(1).click();
 
       await page.getByRole("button", { name: GroupName }).click();
 
@@ -69,7 +71,7 @@ function myTest() {
             (await alreadyInTheGroup.isHidden()) &&
             (await noContactAdd.isHidden())
           ) {
-            await page.waitForTimeout(2000);
+            // await page.waitForTimeout(2000);
             await page.keyboard.press("Enter");
           }
         }
@@ -78,18 +80,34 @@ function myTest() {
           .getByRole("dialog")
           .getByRole("button", { name: "Add member" })
           .click();
-        await page.waitForTimeout(2000);
+        await page.waitForTimeout(4000);
 
         const invitePeople = await page.getByRole("button", {
           name: "Invite to group",
           exact: true,
         });
         if (await invitePeople.isVisible()) {
-          await page
-            .getByRole("button", { name: "Invite to group", exact: true })
-            .click();
-          await page.getByRole("button", { name: "Next" }).click();
+          await page.getByRole("button", { name: "Invite to group", exact: true }).click();
+          
+          await page.waitForSelector('[aria-label="Next"]', { visible: true, timeout: 5000 });
+        
+          await page.waitForTimeout(2000); 
+          
+          await page.getByRole('button', { name: 'Next' }).click();
+        
+          await page.waitForTimeout(2000);  
         }
+        
+        // if (await invitePeople.isVisible()) {
+
+        //   await page
+        //     .getByRole("button", { name: "Invite to group", exact: true })
+        //     .click();
+        //   // await page.waitForTimeout(3000);
+
+        //   await page.getByRole('button', { name: 'Next' }).click();
+
+        // }
         log("Added successfully");
         //
         //
