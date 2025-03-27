@@ -118,7 +118,7 @@ function myTest() {
     } catch (error) {
       console.log("⚠️ Login check failed. Please verify manually.");
     }
-    await page.pause();
+    // await page.pause();
     await browser.close();
   });
 }
