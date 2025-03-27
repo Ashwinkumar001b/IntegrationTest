@@ -5,14 +5,14 @@ import { ftruncate } from "fs";
 const userDataDir = "whatsapp-session-new"; // Directory to save session
 
 function myTest() {
-  test("Login to WhatsApp and Save Session", { timeout: 120000 }, async () => {
-    // const GroupName = process.env.GROUPNAME;
-    // const PhnNumber = process.env.PHONENUMBER;
-    // const integrationType = process.env.TYPE;
-    const integrationType = "ADD";
-    // const integrationType = "REMOVE";
-    const GroupName = "Test A";
-    const PhnNumber = "7639002971,8940766936,9600392639";
+  test("Login to WhatsApp and Save Session", { timeout: 180000 }, async () => {
+    const GroupName = process.env.GROUPNAME;
+    const PhnNumber = process.env.PHONENUMBER;
+    const integrationType = process.env.TYPE;
+    // const integrationType = "ADD";
+    // // const integrationType = "REMOVE";
+    // const GroupName = "Test A";
+    // const PhnNumber = "7639002971,8940766936,9600392639";
     const phoneNumberArray = PhnNumber.split(",");
 
     log("GroupName", GroupName);
@@ -30,7 +30,7 @@ function myTest() {
     // Wait until the WhatsApp chat list loads
     try {
       await page.waitForSelector("div[aria-label='Chat list']", {
-        timeout: 120000,
+        timeout: 180000,
       });
       console.log("✅ Login successful! Session saved.");
       await page
