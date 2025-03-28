@@ -11,9 +11,9 @@ function myTest() {
     const integrationType = process.env.TYPE;
     // const integrationType = "ADD";
     // // const integrationType = "REMOVE";
-    // const GroupName = "Testing A";
-    // // const PhnNumber = "7639002971,8940766936,9600392639";
-    // const PhnNumber = "8940766936";
+    // const GroupName = "Testing C";
+    // const PhnNumber = "7639002971,8940766936,9600392639";
+    // // const PhnNumber = "8940766936";
     const phoneNumberArray = PhnNumber.split(",");
 
     log("GroupName", GroupName);
@@ -44,7 +44,6 @@ function myTest() {
       await page.waitForTimeout(2000);
 
       await page.getByRole("button", { name: `${GroupName}` }).click();
-      await page.waitForTimeout(2000);
 
 
       if (integrationType == "ADD") {
@@ -96,12 +95,13 @@ function myTest() {
         
           await page.waitForSelector('[aria-label="Next"]', { visible: true, timeout: 4000 });
         
-          await page.waitForTimeout(3000);
+          await page.waitForTimeout(2000);
         
           await page.getByRole('button', { name: 'Next' }).click();
+
         log("Invite send successfully")
-          await page.waitForTimeout(3000);  
         }
+        await page.waitForTimeout(1000);
   
         log("Added successfully");
         //
