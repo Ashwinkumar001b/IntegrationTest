@@ -11,7 +11,7 @@ function myTest() {
     const integrationType = process.env.TYPE;
     // const integrationType = "ADD";
     // // const integrationType = "REMOVE";
-    // const GroupName = "Testing A";
+    // const GroupName = "Testing B";
     // // const PhnNumber = "7639002971,8940766936,9600392639";
     // const PhnNumber = "8940766936";
 
@@ -96,7 +96,8 @@ function myTest() {
           await invitePeople.click();
           
           // Wait for the "Next" button to appear and be visible
-          const nextButton = await page.locator('[aria-label="Next"]');
+          const nextButton = await page.locator('[data-icon="send"]');
+          // const nextButton = await page.locator('[aria-label="Next"]');
           await nextButton.waitFor({ state: 'visible', timeout: 6000 });
         
           if (await nextButton.isEnabled()) {

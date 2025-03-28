@@ -1,5 +1,6 @@
-2025/03/28-13:22:15.295 7e08 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Local Storage\leveldb/MANIFEST-000001
-2025/03/28-13:22:15.312 7e08 Recovering log #90
-2025/03/28-13:22:15.313 7e08 Level-0 table #93: started
-2025/03/28-13:22:15.323 7e08 Level-0 table #93: 16909 bytes OK
-2025/03/28-13:22:15.338 7e08 Delete type=0 #90
+2025/03/28-16:18:16.429 afa4 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Local Storage\leveldb/MANIFEST-000001
+2025/03/28-16:18:16.446 afa4 Recovering log #94
+2025/03/28-16:18:16.452 afa4 Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Local Storage\leveldb/000094.log 
+2025/03/28-16:22:19.287 1448 Level-0 table #97: started
+2025/03/28-16:22:19.292 1448 Level-0 table #97: 17782 bytes OK
+2025/03/28-16:22:19.295 1448 Delete type=0 #94
