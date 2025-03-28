@@ -95,7 +95,7 @@ function myTest() {
           await page.waitForTimeout(2000);
         
           await page.getByRole('button', { name: 'Next' }).click();
-        
+        log("Invite send successfully")
           await page.waitForTimeout(2000);  
         }
   
