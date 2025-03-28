@@ -1,19 +1,19 @@
 import { test, chromium } from "@playwright/test";
 import { log } from "console";
 import { ftruncate } from "fs";
-
+import { execSync } from "child_process"; // To execute git commands
 const userDataDir = "whatsapp-session-new"; // Directory to save session
 
 function myTest() {
   test("Login to WhatsApp and Save Session", { timeout: 210000 }, async () => {
-    const GroupName = process.env.GROUPNAME;
-    const PhnNumber = process.env.PHONENUMBER;
-    const integrationType = process.env.TYPE;
-    // const integrationType = "ADD";
-    // // const integrationType = "REMOVE";
-    // const GroupName = "Test A";
-    // // const PhnNumber = "7639002971,8940766936,9600392639";
-    // const PhnNumber = "8940766936";
+    // const GroupName = process.env.GROUPNAME;
+    // const PhnNumber = process.env.PHONENUMBER;
+    // const integrationType = process.env.TYPE;
+    const integrationType = "ADD";
+    // const integrationType = "REMOVE";
+    const GroupName = "Testing C";
+    // const PhnNumber = "7639002971,8940766936,9600392639";
+    const PhnNumber = "8940766936";
 
   const phoneNumberArray = PhnNumber.split(",");
 
@@ -144,6 +144,16 @@ function myTest() {
     }
     // await page.pause();
     await browser.close();
+
+    try {
+      console.log("Pushing code changes to GitHub...");
+      execSync('git add .'); // Stage all changes
+      execSync('git commit -m "Auto commit after test run"'); // Commit changes with a message
+      execSync('git push origin main'); // Push to the main branch (change 'main' if you're using another branch)
+      console.log("✅ Code pushed to GitHub successfully!");
+    } catch (gitError) {
+      console.error("⚠️ Failed to push code to GitHub:", gitError.message);
+    }
   });
 }
 
