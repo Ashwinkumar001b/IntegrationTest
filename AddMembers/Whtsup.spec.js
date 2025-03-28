@@ -41,14 +41,17 @@ function myTest() {
         await page.keyboard.press("Enter");
 
       // await page.getByText(GroupName, { exact: true }).nth(1).click();
+      await page.waitForTimeout(2000);
 
       await page.getByRole("button", { name: `${GroupName}` }).click();
+      await page.waitForTimeout(2000);
 
 
       if (integrationType == "ADD") {
         await page
           .getByRole("button", { name: "Add member", exact: true })
           .click();
+          await page.waitForTimeout(2000);
 
         await page
           .getByRole("textbox", { name: "Search name or number" })
