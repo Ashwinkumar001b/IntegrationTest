@@ -1,6 +1,3 @@
-2025/03/28-10:44:48.799 343c Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db/MANIFEST-000001
-2025/03/28-10:44:48.800 343c Recovering log #3
-2025/03/28-10:44:48.804 343c Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db/000003.log 
-2025/03/28-10:44:48.822 343c Level-0 table #5: started
-2025/03/28-10:44:48.829 343c Level-0 table #5: 71626 bytes OK
-2025/03/28-10:44:48.833 343c Delete type=0 #3
+2025/03/28-11:06:01.143 2cc0 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db/MANIFEST-000001
+2025/03/28-11:06:01.143 2cc0 Recovering log #4
+2025/03/28-11:06:01.144 2cc0 Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\shared_proto_db/000004.log 
