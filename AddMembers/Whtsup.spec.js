@@ -11,9 +11,10 @@ function myTest() {
     const integrationType = process.env.TYPE;
     // const integrationType = "ADD";
     // // const integrationType = "REMOVE";
-    // const GroupName = "Testing C";
-    // const PhnNumber = "7639002971,8940766936,9600392639";
-    // // const PhnNumber = "8940766936";
+    // const GroupName = "Testing A";
+    // // const PhnNumber = "7639002971,8940766936,9600392639";
+    // const PhnNumber = "8940766936";
+
     const phoneNumberArray = PhnNumber.split(",");
 
     log("GroupName", GroupName);
@@ -91,16 +92,25 @@ function myTest() {
           exact: true,
         });
         if (await invitePeople.isVisible()) {
+          console.log("Invite button is visible, clicking...");
           await invitePeople.click();
+          
+          // Wait for the "Next" button to appear and be visible
+          const nextButton = await page.locator('[aria-label="Next"]');
+          await nextButton.waitFor({ state: 'visible', timeout: 6000 });
         
-          await page.waitForSelector('[aria-label="Next"]', { visible: true, timeout: 4000 });
-        
-          await page.waitForTimeout(2000);
-        
-          await page.getByRole('button', { name: 'Next' }).click();
-
-        log("Invite send successfully")
+          if (await nextButton.isEnabled()) {
+            console.log("Next button is visible and enabled, clicking...");
+            await nextButton.click();
+            await page.waitForTimeout(2000); // Wait for the action to complete
+            console.log("Invite sent successfully");
+          } else {
+            console.log("Next button is not enabled or visible, retrying...");
+          }
+        } else {
+          console.log("Invite button is not visible, skipping...");
         }
+        
         await page.waitForTimeout(1000);
   
         log("Added successfully");
