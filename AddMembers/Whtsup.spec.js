@@ -57,7 +57,7 @@ function myTest() {
           await page
             .getByRole("textbox", { name: "Search name or number" })
             .fill(number);
-          await page.waitForTimeout(2000);
+          await page.waitForTimeout(1000);
 
           log("number", number);
           const alreadyInTheGroup = await page.locator(
@@ -82,7 +82,7 @@ function myTest() {
           .getByRole("dialog")
           .getByRole("button", { name: "Add member" })
           .click();
-        await page.waitForTimeout(4000);
+        await page.waitForTimeout(3000);
         const invitePeople = await page.getByRole("button", {
           name: "Invite to group",
           exact: true,
@@ -90,7 +90,7 @@ function myTest() {
         if (await invitePeople.isVisible()) {
           await invitePeople.click();
         
-          await page.waitForSelector('[aria-label="Next"]', { visible: true, timeout: 4000 });
+          await page.waitForSelector('[aria-label="Next"]', { visible: true, timeout: 3000 });
         
           await page.waitForTimeout(2000);
         
