@@ -11,7 +11,7 @@ function myTest() {
     const integrationType = process.env.TYPE;
     // const integrationType = "ADD";
     // // const integrationType = "REMOVE";
-    // const GroupName = "Testing B";
+    // const GroupName = "Testing D";
     // // const PhnNumber = "7639002971,8940766936,9600392639";
     // const PhnNumber = "8940766936";
 
@@ -103,7 +103,7 @@ function myTest() {
           if (await nextButton.isEnabled()) {
             console.log("Next button is visible and enabled, clicking...");
             await nextButton.click();
-            await page.waitForTimeout(2000); // Wait for the action to complete
+            // await page.waitForTimeout(2000); // Wait for the action to complete
             console.log("Invite sent successfully");
           } else {
             console.log("Next button is not enabled or visible, retrying...");
