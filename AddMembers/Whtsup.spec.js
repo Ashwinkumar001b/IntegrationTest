@@ -12,7 +12,8 @@ function myTest() {
     // const integrationType = "ADD";
     // // const integrationType = "REMOVE";
     // const GroupName = "Test A";
-    // const PhnNumber = "7639002971,8940766936,9600392639";
+    // // const PhnNumber = "7639002971,8940766936,9600392639";
+    // const PhnNumber = "8940766936";
     const phoneNumberArray = PhnNumber.split(",");
 
     log("GroupName", GroupName);
@@ -82,7 +83,7 @@ function myTest() {
           .getByRole("dialog")
           .getByRole("button", { name: "Add member" })
           .click();
-        await page.waitForTimeout(3000);
+        await page.waitForTimeout(4000);
         const invitePeople = await page.getByRole("button", {
           name: "Invite to group",
           exact: true,
