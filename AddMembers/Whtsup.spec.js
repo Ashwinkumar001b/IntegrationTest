@@ -11,7 +11,7 @@ function myTest() {
     const integrationType = process.env.TYPE;
     // const integrationType = "ADD";
     // // const integrationType = "REMOVE";
-    // const GroupName = "Test A";
+    // const GroupName = "Testing B";
     // // const PhnNumber = "7639002971,8940766936,9600392639";
     // const PhnNumber = "8940766936";
     const phoneNumberArray = PhnNumber.split(",");
@@ -91,13 +91,13 @@ function myTest() {
         if (await invitePeople.isVisible()) {
           await invitePeople.click();
         
-          await page.waitForSelector('[aria-label="Next"]', { visible: true, timeout: 3000 });
+          await page.waitForSelector('[aria-label="Next"]', { visible: true, timeout: 4000 });
         
-          await page.waitForTimeout(2000);
+          await page.waitForTimeout(3000);
         
           await page.getByRole('button', { name: 'Next' }).click();
         log("Invite send successfully")
-          await page.waitForTimeout(2000);  
+          await page.waitForTimeout(3000);  
         }
   
         log("Added successfully");
