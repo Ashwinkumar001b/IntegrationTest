@@ -13,7 +13,7 @@ function myTest() {
     // const integrationType = "REMOVE";
     const GroupName = "Testing B";
     // const PhnNumber = "7639002971,8940766936,9600392639";
-    const PhnNumber = "8940766936";
+    const PhnNumber = "9600392639";
 
   const phoneNumberArray = PhnNumber.split(",");
 

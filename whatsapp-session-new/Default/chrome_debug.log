@@ -1,6 +1,11 @@
-[0328/184929.292:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yg/r/Ts75VcKY9VP.js (157)
-[0328/184936.910:INFO:CONSOLE(70)] "ErrorUtils caught an error:
+[0328/185055.023:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yg/r/Ts75VcKY9VP.js (157)
+[0328/185101.046:INFO:CONSOLE(70)] "Uncaught (in promise) Error: [comms] castStanza called before startComms", source: https://static.whatsapp.net/rsrc.php/v4/ya/r/X1af-R2gWQv.js (70)
+[0328/185102.283:INFO:CONSOLE(70)] "Uncaught (in promise) Error: [comms] sendIq called before startComms", source: https://static.whatsapp.net/rsrc.php/v4/ya/r/X1af-R2gWQv.js (70)
+[0328/185103.085:INFO:CONSOLE(70)] "ErrorUtils caught an error:
 
-Converting to a string will drop content data. Hash="undefined" Translation="You removed {names}" Content="{"key":null,"ref":null,"props":{"contact":{"id":"919600392639@c.us","name":"ᴀʀᴀᴠɪɴᴅʜ(Technorucs)","shortName":"ᴀʀᴀᴠɪɴᴅʜ(Technorucs)","pushname":"ᴀʀᴀᴠɪɴᴅʜ","type":"in","isContactSyncCompleted":0,"textStatusLastUpdateTime":-1,"syncToAddressbook":true}," (type=object,Object)
+Converting to a string will drop content data. Hash="undefined" Translation="You removed {names}" Content="{"key":null,"ref":null,"props":{"contact":{"id":"919600392639@c.us","name":"ᴀʀᴀᴠɪɴᴅʜ(Technorucs)","shortName":"ᴀʀᴀᴠɪɴᴅʜ(Technorucs)","pushname":"ᴀʀᴀᴠɪɴᴅʜ","type":"in","isBusiness":false,"isEnterprise":false,"isSmb":false,"isContactSyncCompleted":0,"t" (type=object,Object)
 
 Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. [object Object]", source: https://static.whatsapp.net/rsrc.php/v4/ya/r/X1af-R2gWQv.js (70)
+[0328/185104.834:INFO:CONSOLE(70)] "Uncaught (in promise) Error: [comms] sendIq called before startComms", source: https://static.whatsapp.net/rsrc.php/v4/ya/r/X1af-R2gWQv.js (70)
+[0328/185107.447:INFO:CONSOLE(70)] "Uncaught (in promise) Error: [comms] sendIq called before startComms", source: https://static.whatsapp.net/rsrc.php/v4/ya/r/X1af-R2gWQv.js (70)
+[0328/185114.105:INFO:CONSOLE(268)] "Uncaught (in promise) ServerStatusCodeError: MexIqError: [comms] sendIq called before startComms", source: https://static.whatsapp.net/rsrc.php/v4/ya/r/X1af-R2gWQv.js (268)
