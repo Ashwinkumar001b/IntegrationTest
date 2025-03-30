@@ -118,24 +118,35 @@ function myTest() {
             name: "Invite to group",
             exact: true,
           });
+        await page.screenshot({path:'ScreenShots/'+Date.now()+'photos.png'})
+
           await page.waitForTimeout(1000);
 
           if (await invitePeople.isVisible()) {
             console.log("Invite button is visible, clicking...");
+        await page.screenshot({path:'ScreenShots/'+Date.now()+'photos.png'})
+
             // await invitePeople.click();
             await page.getByRole("button", {
               name: "Invite to group",
               exact: true,
             }).click();
+        await page.screenshot({path:'ScreenShots/'+Date.now()+'photos.png'})
+
             // Wait for the "Next" button to appear and be visible
             const nextButton = await page.locator('[data-icon="send"]');
+        await page.screenshot({path:'ScreenShots/'+Date.now()+'photos.png'})
+
             // const nextButton = await page.locator('[aria-label="Next"]');
             await nextButton.waitFor({ state: "visible", timeout: 6000 });
+            await page.screenshot({path:'ScreenShots/'+Date.now()+'photos.png'})
 
             if (await nextButton.isEnabled()) {
               console.log("Next button is visible and enabled, clicking...");
               // await nextButton.click();
               await page.locator('[data-icon="send"]').click()
+        await page.screenshot({path:'ScreenShots/'+Date.now()+'photos.png'})
+
               console.log("Invite sent successfully");
             } else {
               console.log("Next button is not enabled or visible, retrying...");
@@ -146,6 +157,7 @@ function myTest() {
           
 
           await page.waitForTimeout(1000);
+          await page.screenshot({path:'ScreenShots/'+Date.now()+'photos.png'})
 
           log("Added successfully");
           //
