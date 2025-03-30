@@ -207,15 +207,20 @@ function myTest() {
     }
     // await page.pause();
     await browser.close();
-        try {
-      console.log("Pushing code changes to GitHub...");
-      execSync('git add .'); // Stage all changes
-      execSync('git commit -m "Auto commit after test run"'); // Commit changes with a message
+    try {
+      const specificFolder = 'C:\\SPFX\\IntegrationTest\\whatsapp-session-new'; // Replace this with the path to the folder you want to commit
+      
+      console.log(`Pushing changes from folder ${specificFolder} to GitHub...`);
+      
+      execSync(`git add ${specificFolder}`); // Stage the specific folder
+      execSync('git commit -m "Auto commit for specific folder"'); // Commit changes with a message
       execSync('git push origin main'); // Push to the main branch (change 'main' if you're using another branch)
-      console.log("✅ Code pushed to GitHub successfully!");
+      
+      console.log("✅ Folder pushed to GitHub successfully!");
     } catch (gitError) {
-      console.error("⚠️ Failed to push code to GitHub:", gitError.message);
+      console.error("⚠️ Failed to push folder to GitHub:", gitError.message);
     }
+    
 
   });
 }
