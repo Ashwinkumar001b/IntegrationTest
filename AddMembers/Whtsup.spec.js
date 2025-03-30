@@ -208,7 +208,7 @@ function myTest() {
     // await page.pause();
     await browser.close();
     try {
-      const specificFolder = 'C:\\SPFX\\IntegrationTest\\whatsapp-session-new'; // Replace this with the path to the folder you want to commit
+      const specificFolder = 'C:/SPFX/IntegrationTest/whatsapp-session-new';// Replace this with the path to the folder you want to commit
       
       console.log(`Pushing changes from folder ${specificFolder} to GitHub...`);
       
@@ -220,6 +220,7 @@ function myTest() {
     } catch (gitError) {
       console.error("⚠️ Failed to push folder to GitHub:", gitError.message);
     }
+   
     
 
   });
