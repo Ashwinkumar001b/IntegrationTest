@@ -197,6 +197,9 @@ function myTest() {
     }
     // await page.pause();
     await browser.close();
+
+    execSync('git config --global user.email "ashwinkumarbaskar9840@gmail.com"');
+            execSync('git config --global user.name "Ashwinkumar001b"');
     try {
       const specificFolder = './whatsapp-session-new';// Replace this with the path to the folder you want to commit
       
