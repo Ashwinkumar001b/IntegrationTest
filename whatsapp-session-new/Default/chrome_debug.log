@@ -1,5 +1,5 @@
-[0330/225112.372:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yL/r/HV4lUpgO_5W.js (157)
-[0330/225119.448:INFO:CONSOLE(70)] "ErrorUtils caught an error:
+[0330/225335.060:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yL/r/HV4lUpgO_5W.js (157)
+[0330/225342.342:INFO:CONSOLE(70)] "ErrorUtils caught an error:
 
 Converting to a string will drop content data. Hash="undefined" Translation="You added {names}" Content="{"key":null,"ref":null,"props":{"contact":{"id":"919840850267@c.us","name":"Baskar2","shortName":"Baskar2","pushname":"baskaran15061970","type":"in","isContactSyncCompleted":0,"textStatusLastUpdateTime":-1,"syncToAddressbook":true},"showNotifyName":t" (type=object,Object)
 
