@@ -1,3 +1,3 @@
-2025/03/30-21:57:49.262 609c Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Local Storage\leveldb/MANIFEST-000001
-2025/03/30-21:57:49.272 609c Recovering log #4
-2025/03/30-21:57:49.273 609c Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Local Storage\leveldb/000004.log 
+2025/03/30-22:03:44.970 2d70 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Local Storage\leveldb/MANIFEST-000001
+2025/03/30-22:03:44.979 2d70 Recovering log #4
+2025/03/30-22:03:44.979 2d70 Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\Local Storage\leveldb/000004.log 
