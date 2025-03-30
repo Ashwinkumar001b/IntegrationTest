@@ -1,61 +1,62 @@
-2025/03/30-21:27:34.405 62f0 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/03/30-21:27:34.406 62f0 Recovering log #163
-2025/03/30-21:27:34.444 62f0 Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000163.log 
-2025/03/30-21:27:36.277 31d8 Manual compaction at level-0 from '\x00\x1e\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x1f\x00\x00\x00' @ 0 : 0; will stop at (end)
-2025/03/30-21:27:50.995 62f0 Level-0 table #173: started
-2025/03/30-21:27:51.033 62f0 Level-0 table #173: 1084169 bytes OK
-2025/03/30-21:27:51.038 62f0 Delete type=0 #163
-2025/03/30-21:27:51.368 4f38 Compacting 1@1 + 6@2 files
-2025/03/30-21:27:51.476 4f38 Generated table #174@1: 50041 keys, 2208822 bytes
-2025/03/30-21:27:51.581 4f38 Generated table #175@1: 31775 keys, 2198221 bytes
-2025/03/30-21:27:51.655 4f38 Generated table #176@1: 19320 keys, 2162747 bytes
-2025/03/30-21:27:51.749 4f38 Generated table #177@1: 81146 keys, 2223059 bytes
-2025/03/30-21:27:51.858 4f38 Generated table #178@1: 116343 keys, 2273532 bytes
-2025/03/30-21:27:51.880 4f38 Generated table #179@1: 22986 keys, 456603 bytes
-2025/03/30-21:27:51.880 4f38 Compacted 1@1 + 6@2 files => 11522984 bytes
-2025/03/30-21:27:51.881 4f38 compacted to: files[ 0 0 6 0 0 0 0 ]
-2025/03/30-21:27:51.882 4f38 Delete type=2 #165
-2025/03/30-21:27:51.882 4f38 Delete type=2 #166
-2025/03/30-21:27:51.882 4f38 Delete type=2 #167
-2025/03/30-21:27:51.882 4f38 Delete type=2 #168
-2025/03/30-21:27:51.882 4f38 Delete type=2 #169
-2025/03/30-21:27:51.882 4f38 Delete type=2 #170
-2025/03/30-21:27:51.882 4f38 Delete type=2 #173
-2025/03/30-21:27:56.308 62f0 Level-0 table #181: started
-2025/03/30-21:27:56.341 62f0 Level-0 table #181: 1155071 bytes OK
-2025/03/30-21:27:56.342 62f0 Delete type=0 #172
-2025/03/30-21:27:56.344 62f0 Compacting 1@1 + 6@2 files
-2025/03/30-21:27:56.422 62f0 Generated table #182@1: 51488 keys, 2210932 bytes
-2025/03/30-21:27:56.518 62f0 Generated table #183@1: 33389 keys, 2213789 bytes
-2025/03/30-21:27:56.581 62f0 Generated table #184@1: 19322 keys, 2156770 bytes
-2025/03/30-21:27:56.669 62f0 Generated table #185@1: 69915 keys, 2208745 bytes
-2025/03/30-21:27:56.812 62f0 Generated table #186@1: 116722 keys, 2272352 bytes
-2025/03/30-21:27:56.860 62f0 Generated table #187@1: 52669 keys, 1031608 bytes
-2025/03/30-21:27:56.860 62f0 Compacted 1@1 + 6@2 files => 12094196 bytes
-2025/03/30-21:27:56.861 62f0 compacted to: files[ 0 0 6 0 0 0 0 ]
-2025/03/30-21:27:56.861 62f0 Delete type=2 #174
-2025/03/30-21:27:56.861 62f0 Delete type=2 #175
-2025/03/30-21:27:56.862 62f0 Delete type=2 #176
-2025/03/30-21:27:56.862 62f0 Delete type=2 #177
-2025/03/30-21:27:56.862 62f0 Delete type=2 #178
-2025/03/30-21:27:56.862 62f0 Delete type=2 #179
-2025/03/30-21:27:56.862 62f0 Delete type=2 #181
-2025/03/30-21:28:02.440 62f0 Level-0 table #189: started
-2025/03/30-21:28:02.480 62f0 Level-0 table #189: 1097593 bytes OK
-2025/03/30-21:28:02.482 62f0 Delete type=0 #180
-2025/03/30-21:28:02.496 62f0 Compacting 1@1 + 6@2 files
-2025/03/30-21:28:02.606 62f0 Generated table #190@1: 50107 keys, 2208894 bytes
-2025/03/30-21:28:02.690 62f0 Generated table #191@1: 31936 keys, 2204471 bytes
-2025/03/30-21:28:02.734 62f0 Generated table #192@1: 19326 keys, 2162693 bytes
-2025/03/30-21:28:02.804 62f0 Generated table #193@1: 63322 keys, 2198234 bytes
-2025/03/30-21:28:02.924 62f0 Generated table #194@1: 116805 keys, 2273901 bytes
-2025/03/30-21:28:03.009 62f0 Generated table #195@1: 77834 keys, 1519594 bytes
-2025/03/30-21:28:03.009 62f0 Compacted 1@1 + 6@2 files => 12567787 bytes
-2025/03/30-21:28:03.010 62f0 compacted to: files[ 0 0 6 0 0 0 0 ]
-2025/03/30-21:28:03.010 62f0 Delete type=2 #182
-2025/03/30-21:28:03.011 62f0 Delete type=2 #183
-2025/03/30-21:28:03.011 62f0 Delete type=2 #184
-2025/03/30-21:28:03.011 62f0 Delete type=2 #185
-2025/03/30-21:28:03.011 62f0 Delete type=2 #186
-2025/03/30-21:28:03.011 62f0 Delete type=2 #187
-2025/03/30-21:28:03.011 62f0 Delete type=2 #189
+2025/03/30-21:37:18.205 3b4c Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/03/30-21:37:18.206 3b4c Recovering log #188
+2025/03/30-21:37:18.226 3b4c Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000188.log 
+2025/03/30-21:37:19.860 4b68 Level-0 table #198: started
+2025/03/30-21:37:19.876 4b68 Level-0 table #198: 506397 bytes OK
+2025/03/30-21:37:19.877 4b68 Delete type=0 #188
+2025/03/30-21:37:19.878 4b68 Manual compaction at level-0 from '\x00\x1f\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00 \x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/03/30-21:37:20.858 5f58 Compacting 1@1 + 6@2 files
+2025/03/30-21:37:20.941 5f58 Generated table #199@1: 50132 keys, 2208909 bytes
+2025/03/30-21:37:21.020 5f58 Generated table #200@1: 31899 keys, 2210786 bytes
+2025/03/30-21:37:21.072 5f58 Generated table #201@1: 19325 keys, 2160437 bytes
+2025/03/30-21:37:21.109 5f58 Generated table #202@1: 62399 keys, 2198544 bytes
+2025/03/30-21:37:21.166 5f58 Generated table #203@1: 116425 keys, 2272478 bytes
+2025/03/30-21:37:21.214 5f58 Generated table #204@1: 79992 keys, 1565559 bytes
+2025/03/30-21:37:21.214 5f58 Compacted 1@1 + 6@2 files => 12616713 bytes
+2025/03/30-21:37:21.215 5f58 compacted to: files[ 0 0 6 0 0 0 0 ]
+2025/03/30-21:37:21.216 5f58 Delete type=2 #190
+2025/03/30-21:37:21.216 5f58 Delete type=2 #191
+2025/03/30-21:37:21.216 5f58 Delete type=2 #192
+2025/03/30-21:37:21.216 5f58 Delete type=2 #193
+2025/03/30-21:37:21.216 5f58 Delete type=2 #194
+2025/03/30-21:37:21.216 5f58 Delete type=2 #195
+2025/03/30-21:37:21.216 5f58 Delete type=2 #198
+2025/03/30-21:37:33.272 4b68 Level-0 table #206: started
+2025/03/30-21:37:33.298 4b68 Level-0 table #206: 1221859 bytes OK
+2025/03/30-21:37:33.300 4b68 Delete type=0 #197
+2025/03/30-21:37:33.374 4b68 Compacting 1@1 + 6@2 files
+2025/03/30-21:37:33.424 4b68 Generated table #207@1: 53918 keys, 2213713 bytes
+2025/03/30-21:37:33.472 4b68 Generated table #208@1: 35800 keys, 2204510 bytes
+2025/03/30-21:37:33.511 4b68 Generated table #209@1: 19331 keys, 2157486 bytes
+2025/03/30-21:37:33.569 4b68 Generated table #210@1: 46533 keys, 2175057 bytes
+2025/03/30-21:37:33.663 4b68 Generated table #211@1: 116117 keys, 2271001 bytes
+2025/03/30-21:37:33.743 4b68 Generated table #212@1: 112594 keys, 2214217 bytes
+2025/03/30-21:37:33.743 4b68 Compacted 1@1 + 6@2 files => 13235984 bytes
+2025/03/30-21:37:33.744 4b68 compacted to: files[ 0 0 6 0 0 0 0 ]
+2025/03/30-21:37:33.745 4b68 Delete type=2 #199
+2025/03/30-21:37:33.745 4b68 Delete type=2 #200
+2025/03/30-21:37:33.745 4b68 Delete type=2 #201
+2025/03/30-21:37:33.745 4b68 Delete type=2 #202
+2025/03/30-21:37:33.745 4b68 Delete type=2 #203
+2025/03/30-21:37:33.745 4b68 Delete type=2 #204
+2025/03/30-21:37:33.745 4b68 Delete type=2 #206
+2025/03/30-21:37:36.960 4b68 Level-0 table #214: started
+2025/03/30-21:37:36.994 4b68 Level-0 table #214: 1194983 bytes OK
+2025/03/30-21:37:36.996 4b68 Delete type=0 #205
+2025/03/30-21:37:38.003 4b68 Compacting 1@1 + 6@2 files
+2025/03/30-21:37:38.063 4b68 Generated table #215@1: 54831 keys, 2212030 bytes
+2025/03/30-21:37:38.126 4b68 Generated table #216@1: 40494 keys, 2205838 bytes
+2025/03/30-21:37:38.164 4b68 Generated table #217@1: 20603 keys, 2170509 bytes
+2025/03/30-21:37:38.191 4b68 Generated table #218@1: 29529 keys, 2152291 bytes
+2025/03/30-21:37:38.250 4b68 Generated table #219@1: 117056 keys, 2274204 bytes
+2025/03/30-21:37:38.305 4b68 Generated table #220@1: 116169 keys, 2271249 bytes
+2025/03/30-21:37:38.323 4b68 Generated table #221@1: 34349 keys, 675487 bytes
+2025/03/30-21:37:38.323 4b68 Compacted 1@1 + 6@2 files => 13961608 bytes
+2025/03/30-21:37:38.324 4b68 compacted to: files[ 0 0 7 0 0 0 0 ]
+2025/03/30-21:37:38.324 4b68 Delete type=2 #207
+2025/03/30-21:37:38.324 4b68 Delete type=2 #208
+2025/03/30-21:37:38.324 4b68 Delete type=2 #209
+2025/03/30-21:37:38.324 4b68 Delete type=2 #210
+2025/03/30-21:37:38.324 4b68 Delete type=2 #211
+2025/03/30-21:37:38.324 4b68 Delete type=2 #212
+2025/03/30-21:37:38.324 4b68 Delete type=2 #214
