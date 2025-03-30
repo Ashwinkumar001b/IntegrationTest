@@ -118,12 +118,15 @@ function myTest() {
             name: "Invite to group",
             exact: true,
           });
-          await page.waitForTimeout(2000);
+          await page.waitForTimeout(1000);
 
           if (await invitePeople.isVisible()) {
             console.log("Invite button is visible, clicking...");
-            await invitePeople.click();
-
+            // await invitePeople.click();
+            await page.getByRole("button", {
+              name: "Invite to group",
+              exact: true,
+            }).click();
             // Wait for the "Next" button to appear and be visible
             const nextButton = await page.locator('[data-icon="send"]');
             // const nextButton = await page.locator('[aria-label="Next"]');
@@ -131,8 +134,8 @@ function myTest() {
 
             if (await nextButton.isEnabled()) {
               console.log("Next button is visible and enabled, clicking...");
-              await nextButton.click();
-              // await page.waitForTimeout(2000); // Wait for the action to complete
+              // await nextButton.click();
+              await page.locator('[data-icon="send"]').click()
               console.log("Invite sent successfully");
             } else {
               console.log("Next button is not enabled or visible, retrying...");
