@@ -3,6 +3,8 @@ import { log } from "console";
 import { ftruncate } from "fs";
 import { execSync } from "child_process"; // To execute git commands
 const userDataDir = "whatsapp-session-new"; // Directory to save session
+
+
 const simpleGit = require('simple-git');
 const path = require('path');
 const git = simpleGit();
@@ -158,11 +160,9 @@ function myTest() {
               name: "Invite to group",
               exact: true,
             }).click();
-        await page.screenshot({path:'ScreenShots/'+Date.now()+'photos.png'})
 
             // Wait for the "Next" button to appear and be visible
             const nextButton = await page.locator('[data-icon="send"]');
-        await page.screenshot({path:'ScreenShots/'+Date.now()+'photos.png'})
 
             // const nextButton = await page.locator('[aria-label="Next"]');
             await nextButton.waitFor({ state: "visible", timeout: 6000 });
@@ -187,7 +187,7 @@ function myTest() {
           await page.screenshot({path:'ScreenShots/'+Date.now()+'photos.png'})
 
           log("Added successfully");
-    // commitChanges()
+ 
 
           //
           //
