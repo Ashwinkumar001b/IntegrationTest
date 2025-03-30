@@ -5,34 +5,6 @@ import { execSync } from "child_process"; // To execute git commands
 const userDataDir = "whatsapp-session-new"; // Directory to save session
 
 
-const simpleGit = require('simple-git');
-const path = require('path');
-const git = simpleGit();
-
-const repoPath = 'C:/SPFX/IntegrationTest/whatsapp-session-new'; // Absolute path to your Git repository
-const folderToCommit = '.';  // This stages all files in the repository
-
-
-async function commitChanges() {
-  try {
-    // Change the working directory to your repository
-    await git.cwd(repoPath);
-
-    // Stage the folder
-    await git.add(folderToCommit);
-
-    // Commit with a message
-    await git.commit('Commit changes for my-folder');
-
-    // Push changes to GitHub
-    await git.push('origin', 'main'); // Replace 'main' with your branch name
-
-    console.log('Successfully committed and pushed the folder!');
-  } catch (err) {
-    console.error('Error during git operations:', err);
-  }
-}
-
 function myTest() {
   test("Login to WhatsApp and Save Session", { timeout: 210000 }, async () => {
     // const GroupName = process.env.GROUPNAME;
@@ -147,32 +119,42 @@ function myTest() {
             name: "Invite to group",
             exact: true,
           });
-        await page.screenshot({path:'ScreenShots/'+Date.now()+'photos.png'})
+          await page.screenshot({
+            path: "ScreenShots/" + Date.now() + "photos.png",
+          });
 
           await page.waitForTimeout(1000);
 
           if (await invitePeople.isVisible()) {
             console.log("Invite button is visible, clicking...");
-        await page.screenshot({path:'ScreenShots/'+Date.now()+'photos.png'})
+            await page.screenshot({
+              path: "ScreenShots/" + Date.now() + "photos.png",
+            });
 
             // await invitePeople.click();
-            await page.getByRole("button", {
-              name: "Invite to group",
-              exact: true,
-            }).click();
+            await page
+              .getByRole("button", {
+                name: "Invite to group",
+                exact: true,
+              })
+              .click();
 
             // Wait for the "Next" button to appear and be visible
             const nextButton = await page.locator('[data-icon="send"]');
 
             // const nextButton = await page.locator('[aria-label="Next"]');
             await nextButton.waitFor({ state: "visible", timeout: 6000 });
-            await page.screenshot({path:'ScreenShots/'+Date.now()+'photos.png'})
+            await page.screenshot({
+              path: "ScreenShots/" + Date.now() + "photos.png",
+            });
 
             if (await nextButton.isEnabled()) {
               console.log("Next button is visible and enabled, clicking...");
               // await nextButton.click();
-              await page.locator('[data-icon="send"]').click()
-        await page.screenshot({path:'ScreenShots/'+Date.now()+'photos.png'})
+              await page.locator('[data-icon="send"]').click();
+              await page.screenshot({
+                path: "ScreenShots/" + Date.now() + "photos.png",
+              });
 
               console.log("Invite sent successfully");
             } else {
@@ -181,14 +163,14 @@ function myTest() {
           } else {
             console.log("Invite button is not visible, skipping...");
           }
-          
 
           await page.waitForTimeout(1000);
-          await page.screenshot({path:'ScreenShots/'+Date.now()+'photos.png'})
+          await page.screenshot({
+            path: "ScreenShots/" + Date.now() + "photos.png",
+          });
 
-await commitChanges();
+          await commitAndPushAll();
           log("Added successfully");
- 
 
           //
           //
@@ -225,6 +207,15 @@ await commitChanges();
     }
     // await page.pause();
     await browser.close();
+        try {
+      console.log("Pushing code changes to GitHub...");
+      execSync('git add .'); // Stage all changes
+      execSync('git commit -m "Auto commit after test run"'); // Commit changes with a message
+      execSync('git push origin main'); // Push to the main branch (change 'main' if you're using another branch)
+      console.log("✅ Code pushed to GitHub successfully!");
+    } catch (gitError) {
+      console.error("⚠️ Failed to push code to GitHub:", gitError.message);
+    }
 
   });
 }
