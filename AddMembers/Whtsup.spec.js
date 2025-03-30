@@ -119,17 +119,13 @@ function myTest() {
             name: "Invite to group",
             exact: true,
           });
-          await page.screenshot({
-            path: "ScreenShots/" + Date.now() + "photos.png",
-          });
+          
 
           await page.waitForTimeout(1000);
 
           if (await invitePeople.isVisible()) {
             console.log("Invite button is visible, clicking...");
-            await page.screenshot({
-              path: "ScreenShots/" + Date.now() + "photos.png",
-            });
+             
 
             // await invitePeople.click();
             await page
@@ -144,17 +140,13 @@ function myTest() {
 
             // const nextButton = await page.locator('[aria-label="Next"]');
             await nextButton.waitFor({ state: "visible", timeout: 6000 });
-            await page.screenshot({
-              path: "ScreenShots/" + Date.now() + "photos.png",
-            });
+             
 
             if (await nextButton.isEnabled()) {
               console.log("Next button is visible and enabled, clicking...");
               // await nextButton.click();
               await page.locator('[data-icon="send"]').click();
-              await page.screenshot({
-                path: "ScreenShots/" + Date.now() + "photos.png",
-              });
+             
 
               console.log("Invite sent successfully");
             } else {
@@ -165,9 +157,7 @@ function myTest() {
           }
 
           await page.waitForTimeout(1000);
-          await page.screenshot({
-            path: "ScreenShots/" + Date.now() + "photos.png",
-          });
+          
 
           await commitAndPushAll();
           log("Added successfully");
@@ -208,7 +198,7 @@ function myTest() {
     // await page.pause();
     await browser.close();
     try {
-      const specificFolder = 'C:/SPFX/IntegrationTest/whatsapp-session-new';// Replace this with the path to the folder you want to commit
+      const specificFolder = './whatsapp-session-new';// Replace this with the path to the folder you want to commit
       
       console.log(`Pushing changes from folder ${specificFolder} to GitHub...`);
       
