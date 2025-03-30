@@ -3,6 +3,33 @@ import { log } from "console";
 import { ftruncate } from "fs";
 import { execSync } from "child_process"; // To execute git commands
 const userDataDir = "whatsapp-session-new"; // Directory to save session
+const simpleGit = require('simple-git');
+const path = require('path');
+const git = simpleGit();
+
+const repoPath = 'C:/SPFX/IntegrationTest/whatsapp-session-new'; // Absolute path to your Git repository
+const folderToCommit = '.';  // This stages all files in the repository
+
+
+async function commitChanges() {
+  try {
+    // Change the working directory to your repository
+    await git.cwd(repoPath);
+
+    // Stage the folder
+    await git.add(folderToCommit);
+
+    // Commit with a message
+    await git.commit('Commit changes for my-folder');
+
+    // Push changes to GitHub
+    await git.push('origin', 'main'); // Replace 'main' with your branch name
+
+    console.log('Successfully committed and pushed the folder!');
+  } catch (err) {
+    console.error('Error during git operations:', err);
+  }
+}
 
 function myTest() {
   test("Login to WhatsApp and Save Session", { timeout: 210000 }, async () => {
@@ -160,6 +187,8 @@ function myTest() {
           await page.screenshot({path:'ScreenShots/'+Date.now()+'photos.png'})
 
           log("Added successfully");
+    // commitChanges()
+
           //
           //
         } else if (integrationType == "REMOVE") {
@@ -193,18 +222,10 @@ function myTest() {
     } catch (error) {
       console.log("⚠️ Login check failed. Please verify manually.");
     }
+
     // await page.pause();
     await browser.close();
 
-    // try {
-    //   console.log("Pushing code changes to GitHub...");
-    //   execSync('git add .'); // Stage all changes
-    //   execSync('git commit -m "Auto commit after test run"'); // Commit changes with a message
-    //   execSync('git push origin main'); // Push to the main branch (change 'main' if you're using another branch)
-    //   console.log("✅ Code pushed to GitHub successfully!");
-    // } catch (gitError) {
-    //   console.error("⚠️ Failed to push code to GitHub:", gitError.message);
-    // }
   });
 }
 

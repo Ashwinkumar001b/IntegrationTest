@@ -1,3 +1,2 @@
-2025/03/30-19:17:22.705 53f8 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\GCM Store\Encryption/MANIFEST-000001
-2025/03/30-19:17:22.707 53f8 Recovering log #3
-2025/03/30-19:17:22.708 53f8 Reusing old log C:\SPFX\IntegrationTest\whatsapp-session-new\Default\GCM Store\Encryption/000003.log 
+2025/03/30-21:14:54.239 27f0 Creating DB C:\SPFX\IntegrationTest\whatsapp-session-new\Default\GCM Store\Encryption since it was missing.
+2025/03/30-21:14:54.246 27f0 Reusing MANIFEST C:\SPFX\IntegrationTest\whatsapp-session-new\Default\GCM Store\Encryption/MANIFEST-000001
