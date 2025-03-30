@@ -113,7 +113,7 @@ function myTest() {
             .getByRole("dialog")
             .getByRole("button", { name: "Add member" })
             .click();
-          await page.waitForTimeout(4000);
+          await page.waitForTimeout(8000);
           const invitePeople = await page.getByRole("button", {
             name: "Invite to group",
             exact: true,
@@ -138,6 +138,7 @@ function myTest() {
           } else {
             console.log("Invite button is not visible, skipping...");
           }
+          
 
           await page.waitForTimeout(1000);
 
