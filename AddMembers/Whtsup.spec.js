@@ -186,6 +186,7 @@ function myTest() {
           await page.waitForTimeout(1000);
           await page.screenshot({path:'ScreenShots/'+Date.now()+'photos.png'})
 
+await commitChanges();
           log("Added successfully");
  
 
@@ -222,7 +223,6 @@ function myTest() {
     } catch (error) {
       console.log("⚠️ Login check failed. Please verify manually.");
     }
-
     // await page.pause();
     await browser.close();
 
